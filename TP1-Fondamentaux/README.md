@@ -16,7 +16,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
 
 Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.  
 
-## Partie 1 : Interpréteur et package (30 min)
+## Partie 1 : Interpréteur et package (40 min)
 
 **Pour commencer**
 
@@ -77,7 +77,7 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
       - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
 1. *(Optionnel)* Dans `tp1`, créez le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
 
-## Partie 2 : La gestion de paquets (30min)
+## Partie 2 : Gestionnaire de paquets (15min)
 
 **Environnement virtuel**
 1. Revenez dans le dossier `TP1-Fondamentaux`
@@ -98,12 +98,61 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Installez également votre package `tp1`.
 1. Vérifiez son installaton en exécutant le fichier `tests/test-tp1-install.py`
 
-## Partie 3 : Comprendre la notion d'objet en python (30min)
+## Partie 3 : Comprendre la notion d'objet en python (40min)
 
-1. Vérifiez que vous êtes bien dans l'environnement virtuel
-2. Lancez l'interpréteur python en mode interactif
+**Avantages de la POO**
+
+**Manipuler nos premiers objets**
+1. Vérifiez que vous êtes bien dans l'environnement virtuel `.tp1-env`
+1. Lancez l'interpréteur python en mode interactif
+
+Dans les versions récentes de python, tout est objet. En effet, les types intégrés à python héritent tous de la même classe parente `object`. C'est le cas notamment de `bool`, `int`, `float`, `str`, `list`, `dict`, `set`, etc.
 
 
+1. Exécutez les instructions suivantes:
+   
+   Instancier la classe objet:
+   ```python
+   obj = object()
+   ```
 
+   Afficher son type:
+   ```python
+   print(type(obj))
+   ```
 
+   Afficher ses attributs et méthodes:
+   ```python
+   # On distingue les méthodes built-in des autres
+   # par leur notation particulière __method__
+   print(dir(obj))
+   ```
+   
+   Afficher le résultat de l'appel de quelques-unes de ces méthodes:
+   ```python
+   # Exemple appel méthode __str__
+   print(obj.__str__())
+   ```
 
+1. Réalisez les mêmes opérations appliquées à un entier.
+1. Réalisez les mêmes opérations appliquées à une chaîne de caracètes.
+1. Réalisez les mêmes opérations appliquées à un dictionnaire.
+
+**Création de notre première classe**
+1. Créez la classe suivante:
+   -- image de la clase en UML --
+
+1. Créez les classes suivantes:
+   -- image de la clase en UML --
+
+   La relation entre entre `Figure` et `Square` est une relation d'héritage. `Square` hérite des attributs et méthodes `Figure`.
+   ```python
+   class Fille(Mere):
+      pass
+   ```
+
+   La relation entre entre `Square` et `Point` est une relation composition. Un carré est composé de plusieurs points.
+
+1. Implémentez leurs constructeurs.
+1. Implémentez les méthodes `area` des objets. 
+1. Instanciez un carré et appelez calculez sa surface.
