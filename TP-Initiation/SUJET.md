@@ -42,7 +42,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
    
    print("Hey, 3 + 2 = ", addition(3, 2))
    ``` 
-   - Exécutez ce fichier
+   - Exécutez ce module
   
 
 
