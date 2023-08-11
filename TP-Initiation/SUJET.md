@@ -3,32 +3,31 @@
 Dans ce TP, on s'intéresse aux fondements du langage python et de la programmation orientée objet dans ce langage. Les compétences travaillées durant cette activité sont les suivantes : 
 
 - Comprendre et utiliser l'interpréteur Python
-- Créer des modules python
+- Créer un package et des modules python
 - Utiliser un environnement virtuel python
 - Comprendre et utiliser le gestionnaire de paquets `pip`
 - Savoir différencier les paradigmes de programmation
 - Comprendre les avantages de la POO
 - Comprendre la notion d'objet en python
 
-## Partie 1 : Interpréteur et modules (30 min)
+## Partie 0 : Mise en place
+- Clonez ce repo : `git clone <repo>`
+- Ouvrez un terminal à l'emplacement `poo-python/TP1-Fondamentaux`
+
+Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.  
+
+## Partie 1 : Interpréteur et package (30 min)
 
 **Pour commencer**
 
-1. Vérifiez que python est bien installé
-1. De quelle version s'agit-il ?
-   - S'il s'agit de la version 2, vérifiez que `python3` est également installé
+1. Vérifiez que python est bien installé (version >= 3.5)
+1. Quelle est sa version par défaut ?
+   - S'il s'agit de la version 2, vérifiez que `python3` est également installée
    - Nous n'utiliserons **désormais plus que la version 3**
      
-**Interpréteur (mode **interactif**)**
-
-3. Assignez à la variable `lesson` la valeur `"poo"`
-1. Afficher le contenu de la variable `lesson`
-1. Créez un array numpy initilisé avec 10 valeurs de 0
-1. Quittez l'interpréteur `Ctrl + D`
-   
 **Interpréteur et premiers modules**
 
-7. Créez le dossier `tp1` (ce dossier est **notre package**, il contient différents **modules**)
+1. Créez le dossier `tp1` (ce dossier est **notre package**, il contient différents **modules**)
      
 1. Dans le dossier `tp1` créez le fichier `main.py` avec le contenu:
       ```python
@@ -69,7 +68,7 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Ajoutez une fonction `np_addition` au module `tp1.math`
    Cette fonction prend deux array numpy en entrée et calcule la somme. 
 
-1. Dans `tp1/math/__init__.py`, ajoutez une fonction qui calcul l'aire d'un cercle en fonction de son rayon.
+1. (Optionnel) Dans `tp1/math/__init__.py`, ajoutez une fonction qui calcul l'aire d'un cercle en fonction de son rayon.
    - $aire = \pi r^2$
    - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
 1. *(Optionnel)* Dans `tp1`, créez le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
