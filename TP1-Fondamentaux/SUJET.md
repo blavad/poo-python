@@ -88,9 +88,12 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Comparez à la liste des paquets python installés sur votre machine. 
 1. Installez les paquets nécessaires au bon fonctionnement du module `tp1` (numpy).
    > On pourra valider que la commande `python -m tp1.tp1` s'exécute bien.
+
 1. Créez le fichier `requirements.txt` qui contient les dépendances de notre package.
+   
 **Installer et utiliser notre module**
-8. Sortez de l'environnement virtuel `.env`, créez-en un second nommé `.tp1-env`.
+
+9. Sortez de l'environnement virtuel `.env`, créez-en un second nommé `.tp1-env`.
 1. Dans ce second environnement virtuel, installez tous les requirements du fichier `requirements.txt` en une ligne.
 1. Installez également votre package `tp1`.
 1. Vérifiez son installaton en exécutant le fichier `tests/test-tp1-install.py`
@@ -100,7 +103,6 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Vérifiez que vous êtes bien dans l'environnement virtuel
 2. Lancez l'interpréteur python en mode interactif
 
-## Partie 3 : Création de modules 
 
 
 
