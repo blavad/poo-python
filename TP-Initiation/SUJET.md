@@ -15,16 +15,39 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
    - S'il s'agit de la version 2, vérifiez que `python3` est également installé
    - Nous n'utiliserons **désormais plus que la version 3**
      
-3. Interpréteur interactif
+3. Interpréteur (mode **interactif**)
 
    1. Assignez à la variable `lesson` la valeur `"poo"`
    2. Afficher le contenu de la variable `lesson`
    3. Créez un array numpy initilisé avec 10 valeurs de 0
    4. Quittez l'interpréteur `Ctrl + D`
 
-5. Interpréteur de programme
+5. Interpréteur et création de modules
 
-   1. Créez le fichier `TP1.py`
+   1. Créez le dossier `tp1` (ce dossier est **notre package**)
+   2. Dans le dossier `tp1` créez le fichier `main.py` avec le contenu:
+   ```python
+   # fichier main.py
+   print("> Module 'main'")
+   ```
+   3. Exécutez ce fichier grâce à l'interpréteur
+   4. Exécutez le module `tp1.main`, on utilisera pour cela la commande `python -m tp1.main`. Que ce passe-t-il ? 🚩
+   5. Exécutez la commande `python -m tp1`. Que ce passe-t-il ? 🚩
+   6. Renommez le fichier `main.py` en `__main__.py` et réessayez. 🚩
+   7. Dans le dossier `tp1/math` créez le module `addition.py` avec le contenu:
+   ```python
+   # fichier addition.py
+   def addition(a, b):
+      return a + b
+   
+   print("Hey, 3 + 2 = ", addition(3, 2))
+   ``` 
+   4. Exécutez ce fichier
+  
+
+
+## Partie 4 : Création de modules en python
+
 
 ## Partie 2 : La gestion de paquets (30min)
 
@@ -41,7 +64,8 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
 1. Vérifiez que vous êtes bien dans l'environnement virtuel
 2. Lancez l'interpréteur python en mode interactif
 
-## Partie 4 : Création de modules en python
+## Partie 3 : Création de modules 
+
 
 
 
