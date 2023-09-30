@@ -16,7 +16,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
 
 Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.  
 
-## Partie 1 : Interpréteur et package (30 min)
+## Partie 1 : Interpréteur et package (40 min)
 
 **Pour commencer**
 
@@ -78,7 +78,7 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
       - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
 1. *(Optionnel)* Dans `tp1`, créer le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
 
-## Partie 2 : La gestion de paquets (30min)
+## Partie 2 : Gestionnaire de paquets (15min)
 
 **Environnement virtuel**
 1. Revener dans le dossier `TP1-Fondamentaux`
@@ -99,13 +99,69 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Installer également votre package `tp1`.
 1. Vérifier son installaton en exécutant le fichier `tests/test-tp1-install.py`
 
-## Partie 3 : Comprendre la notion d'objet et de typage dynamique en python (30min)
+## Partie 3 : Comprendre la notion d'objet et de typage dynamique en python (40min)
 
+**Manipuler nos premiers objets**
 1. Commencer par regarder cette [vidéo sur les notions de variables, objets et typage dynamique en python](https://www.youtube.com/watch?v=vSsTKNCSKnU).
-1. Vérifier que vous êtes bien dans l'environnement virtuel
+1. Vérifier que vous êtes bien dans l'environnement virtuel `.tp1-env`
 1. Lancer l'interpréteur python en mode interactif
 
+Dans les versions récentes de python, tout est objet. En effet, les types intégrés à python héritent tous de la même classe parente `object`. C'est le cas notamment de `bool`, `int`, `float`, `str`, `list`, `dict`, `set`, etc.
 
 
+4. Exécuter les instructions suivantes:
+   
+   Instancier la classe objet:
+   ```python
+   obj = object()
+   ```
 
+   Afficher son type:
+   ```python
+   print(type(obj))
+   ```
 
+   Afficher ses attributs et méthodes:
+   ```python
+   # On distingue les méthodes built-in des autres
+   # par leur notation particulière __method__
+   print(dir(obj))
+   ```
+   
+   Afficher le résultat de l'appel de quelques-unes de ces méthodes:
+   ```python
+   # Exemple appel méthode __str__
+   print(obj.__str__())
+   ```
+   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ? 
+
+1. Réaliser les mêmes opérations appliquées à un float.
+   
+   A quoi servents les méthodes `__int__`, `__pow__`, `__trunc__` ?
+
+1. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
+
+   A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ?
+
+1. Réaliser les mêmes opérations appliquées à un dictionnaire.
+
+   A quoi servents les méthodes `keys`, `values` et `items` ?
+
+**Création de notre première classe**
+1. Créer la classe suivante:
+   -- image de la clase en UML --
+
+1. Créer les classes suivantes:
+   -- image de la clase en UML --
+
+   La relation entre entre `Figure` et `Square` est une relation d'héritage. `Square` hérite des attributs et méthodes `Figure`.
+   ```python
+   class Fille(Mere):
+      pass
+   ```
+
+   La relation entre entre `Square` et `Point` est une relation composition. Un carré est composé de plusieurs points.
+
+1. Implémenter leurs constructeurs.
+1. Implémenter les méthodes `area` des objets. 
+1. Instancier un carré et appeler calculer sa surface.
