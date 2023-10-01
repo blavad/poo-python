@@ -121,10 +121,10 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
 
    Afficher ses attributs et méthodes:
    ```python
-   # On distingue les méthodes built-in des autres
-   # par leur notation particulière __method__
    print(dir(obj))
    ```
+   
+   ***Note :*** On distingue les méthodes built-in des autres par leur notation particulière `__method__`
    
    Afficher le résultat de l'appel de quelques-unes de ces méthodes:
    ```python
