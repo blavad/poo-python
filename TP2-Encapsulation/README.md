@@ -1,17 +1,19 @@
 # TP n°2 : Classes, objets et encapsulation
 
-Dans ce TP, on s'intéresse à ... Les compétences travaillées durant cette activité sont les suivantes : 
-- Définir des classes et instancier des objets
-- Utiliser des constructeurs
+Dans ce TP, on s'intéresse l'implémentation des classes et l'utilisation des instances de classes (les objets). Nous aborderons également la notion d'encapsulation et d'héritage pour gérer des piles d'éléments. Les compétences travaillées durant cette activité sont les suivantes : 
+- Manipuler des objets usuels (listes, ensembles et dictionnaires) 
+- Implémenter des classes et instancier des objets
+- Implémenter un constructeur 
+- Implémenter des attributs et méthodes d'instance 
 - Comprendre le concept d'encapsulation et savoir l'utiliser convenablement
-- Utiliser les bonnes pratiques de déclaration des attributs et méthodes d'une classe
+- Utiliser les bonnes pratiques de codage python
 
 ## Partie I : Instancier et manipuler des objets usuels 
 40 min
 
 **Manipuler des listes**
 
-1. Définir la liste  `liste1 = [11, 40,18,5,56]`, puis effectuer les actions suivantes :
+1. Définir la liste  `liste1 = [11, 40, 18, 5, 56]`, puis effectuer les actions suivantes :
     - ajouter l’élément 12 à la liste et afficher la liste
     - trier et afficher la liste
     - renverser et afficher la liste
@@ -76,7 +78,7 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 
 
 ## Partie II : Créer nos premiers objets
-1h00
+50 min
 
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 - le nom des variables est clair et explicite 
@@ -85,7 +87,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 - la nomenclature python des attributs public, protégés et privés est respectée
 
 **Création de piles**
-1. Implémentez une pile LIFO (**L**ast **I**n **F**irst **O**ut) avec une liste. Pour cela, définir trois fonctions :
+1. Implémentez une pile LIFO (**L**ast **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `LIFO` dans un fichier `lifo.py` et définir trois fonctions :
     - `__init__` : qui construit une pile à partir d’une liste variable d’éléments passés en paramètres
     - `empile` : empile un élément en haut de la pile
     - `depile` : dépile un élément du haut de la pile
@@ -93,7 +95,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_lifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas. 
 
-1. De la même manière, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela, définir trois fonctions :
+1. De la même manière, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela,  créer une classe `FIFO` dans un fichier `fifo.py` et définir trois fonctions :
     - `__init__` : qui construit une pile à partir d’une liste variable d’éléments passés en paramètres
     - `empile` : empile un élément en haut de la pile
     - `depile` : dépile un élément du bas de la pile
@@ -141,15 +143,24 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
     ```
 1. Changer les classes `LIFO` et `FIFO` en conséquence.
 
-1. Créer une classe `PilePile` dont l'usage est tel
+1. Dans un fichier `test_pile.py`, créer une fonction `test_pile` qui prend en argument une pile quelconque d'entiers (c.à.d une pile qui vérifie l'interface `IPile[int]`) et qui réalise les opérations suivantes:
+    - affiche la pile, empile 5; affiche la pile; empile 8; affiche la pile; dépile; affiche la pile; dépile; 
 
-```python
-lifo1 = LIFO()
-lifo2 = LIFO()
-lifo3 = FIFO()
+    ***Note :*** On veillera à bien déclarer les types de retour et des arguments de la fonction.
 
-pile = PileManager()
-pile.empile(lifo1)
-pile.empile(lifo2)
-pile.empile(lifo3)
-```
+1. Créer dans ce même fichier un programme principal exécutant cette fonction sur une pile FIFO vide, sur une FIFO initialisée avec le liste `[1, 2, 3]` et sur une pile LIFO vide. Tester ce programme.  
+
+1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
+    - `__init__` : qui construit une pile à partir d’une liste variable de piles passées en paramètres
+    - `empile` : empile un entier dans chacune des sous-piles
+    - `depile` : dépile un entier dans chacune des sous-piles
+    - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"PileMultiple([ LIFO([0, 5, 12]), FIFO([1, 2, 3]) ])"`)
+
+    De quoi hérite cette classe ?
+
+1. Dans le programme principal du fichier `test_pile.py`
+
+    - créer une pile multiple constituée de deux piles FIFO et d'une pile LIFO 
+    - créer une pile multiple constituée d'une pile LIFO et de la pile multiple précédente 
+
+    Appliquer la function `test_pile` à ces deux piles multiples. Tester ce programme et vérifier que le résultat est cohérent.
