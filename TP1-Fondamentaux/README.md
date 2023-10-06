@@ -14,7 +14,8 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
 
 Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.  
 
-## Partie I : Interpréteur et package (45 min)
+## Partie I : Interpréteur et package 
+45 min
 
 **Pour commencer**
 
@@ -76,7 +77,8 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
       - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
 1. *(Optionnel)* Dans `tp1`, créer le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
 
-## Partie II : Gestionnaire de paquets (15min)
+## Partie II : Gestionnaire de paquets 
+20min
 
 **Environnement virtuel**
 1. Revener dans le dossier `TP1-Fondamentaux`
@@ -97,7 +99,8 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Installer également votre package `tp1`.
 1. Vérifier son installaton en exécutant le fichier `tests/test-tp1-install.py`
 
-## Partie III : Comprendre la notion d'objet et de typage dynamique en python (30min)
+## Partie III : Comprendre la notion d'objet et de typage dynamique en python 
+40min
 
 **Manipuler nos premiers objets**
 1. Commencer par regarder cette [vidéo sur les notions de variables, objets et typage dynamique en python](https://www.youtube.com/watch?v=vSsTKNCSKnU).

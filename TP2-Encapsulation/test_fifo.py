@@ -1,8 +1,7 @@
-
 import unittest
-import random
 
 from fifo import FIFO
+
 
 class TestFIFO(unittest.TestCase):
     def test_00_empile(self):

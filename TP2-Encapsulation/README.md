@@ -78,7 +78,7 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 
 
 ## Partie II : Créer nos premiers objets
-50 min
+1h00 min
 
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 - le nom des variables est clair et explicite 
@@ -103,12 +103,17 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`. 
+**Création d'une interface**
+
+5. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`. 
 
 1. Faire hériter les classes `LIFO` et `FIFO` de `IPile`.
 
+1. Selon vous, à quoi peut service la création d'interfaces ?
 
-1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous.
+**Généricité des types manipulés et héritage**
+
+8. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous.
 
     Exemple de définition d'une classe générique en python.
 

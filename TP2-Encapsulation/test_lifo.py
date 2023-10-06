@@ -1,8 +1,7 @@
-
 import unittest
-import random
 
 from lifo import LIFO
+
 
 class TestLIFO(unittest.TestCase):
     def test_00_empile(self):

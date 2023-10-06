@@ -1,25 +1,27 @@
 # TP 3 : Programmation Orientée Objet - Polymorphisme
 
-Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cela, on cherchera à développer un logiciel permettant de créer et d'afficher des figures géométriques plus ou moins complexes. Les compétences travaillées durant cette activité sont les suivantes : 
+Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cela, on cherchera à développer un logiciel permettant de créer et d'afficher des figures géométriques plus ou moins complexes via divers afficheurs graphiques. Les compétences travaillées durant cette activité sont les suivantes : 
 
 - Comprendre et décrire des interfaces logicielles
 - Comprendre et utiliser l'héritage
 - Comprendre et utiliser le polymorphisme
 
-## Partie I : Comprendre UML (20 min)
+## Partie I : Comprendre UML 
+20 min
 
 **Figure 1 (ci-dessous) :** Diagramme de classes représentant des formes 2D.
 ```mermaid
     classDiagram 
     direction TB
      class Shape2D {
-        # ordinate : int
-        # abscissa : int
-        # color : tuple
+        # xpos : int
+        # ypos : int
+        # color : Color
 
         + area() : float
         + draw() : void
         + move(deltaX : int, deltaY : int) : void
+        + getXY(): tuple[int, int]
     
         }
 
@@ -29,25 +31,26 @@ Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cel
     }
 
     class Circle {
-    -diameter : int
+    -radius : int
     +area() : float
     +draw() : void
     }
 
-    class Square {
-    -side : int
+    class Rectangle {
+    -width : int
+    -height : int
     +area() : float
     +draw(): void
     }
 
     Shape2D <|-- Circle
-    Shape2D <|-- Square
+    Shape2D <|-- Rectangle
     Shape2D <|-- Point
 ```
 
 
 Etant donné le diagramme de classes ci-dessus représentant des formes 2D, répondre aux questions suivantes :
-1. L'attribut **diameter** est-il accessible pour un objet **Square** ?
+1. L'attribut **radius** est-il accessible pour un objet **Rectangle** ?
 1. Un objet **Circle** possède-t-il un attribut **color** 
 1. Peut-on appliquer la méthode **move** à un objet **Point** ?
 1. Grâce à quelle notion de l'approche objet, la méthode **rotate** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
@@ -58,30 +61,107 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
     c. Quelle modification doit-on apporté au diagramme de classes ?
 
 
-## Partie II : Classes et instances (1h00)
+## Partie II : Classes et instances 
+0h45
+
+1. Préparer son environnement de travail
+    - Créer un environnement virtuel et l'activer.
+    - Installer les dépendences (fichier *requirements.txt*)
 
 1. Traduire les classes ci-dessus en python. On veillera à ce que les points suivants soient respectés:
     - Une classe = un fichier.
-    - Le programme lève une exception lorsque la couleur est invalide
-        
-        | Une couleur est valide si son type est un 3-uplet dont les valeurs sont comprises entre 0 et 255.
-
     - Les constructeurs sont correctement implémentés.
     - Les attributs sont tous privés ou protégés.
+    - Le programme lève une exception lorsque la couleur est invalide
+        
+        ***Note :*** Une couleur est valide si son type est un 3-uplet dont les valeurs sont comprises entre 0 et 255. On pourra définir le type `Color` un alias vers le 3-uplets (**tuple** en anglais) d'entiers
+        
     - Les méthodes `area` et `move` sont correctement implémentés.
     - La méthode `draw` lève une exception de type `NotImplementedError` car elle sera implémentée plus tard dans le TP. 
     - Les types sont déclarés selon la norme PEP 483.
     - Le code est documenté.
 
-1. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composé de plusieurs autres formes 2D. 
+1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie un cercle de rayon 10 en position x=0 et y=0.
 
-1. Traduire cette extension en python.
+1. Dans le fichier `partieI.py`, implémenter la fonction `run_question_4`. Cette fonction:
+    - utilise le constructeur par défaut pour créer un cercle
+    - affiche son aire  
+    - crée un rectangle de longueur 30 et de largeur 10 en position (10, 10)
+    - le déplace en positon (15, 20)
+    - affiche ses coordonnées x, y
 
-## Partie III : Affichage des formes sur un écran collaboratif
+    Tester la fonction en lançant le script `python3 partieI.py q4`.
+
+1. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D. 
+
+1. Traduire cette extension en python. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
+
+1. Dans le fichier `partieI.py`, implémenter la fonction `run_question_6` permettant de:
+    - construire une forme 2D composée de deux cercles et d'un rectangle au choix
+    - afficher l'aire de cette forme
+    - afficher les coordonnées de cette forme
+    - appliquer une translation de 20 pixels en x et 8 pixels en y
+
+    Tester la fonction en lançant le script `python3 partieI.py q6`.
+
+## Partie III : Afficheur de formes
+40 min
+
+Dans cette partie on s'intéresse à l'affichage de formes géométriques. 
+
+1. Créer l'interface python `Displayer` respectant les spécifications ci-dessous.
+
+    ```mermaid
+    classDiagram 
+        direction TB
+         class Displayer {
+            + draw_point(x: int, y: int, color: Color): void
+            + draw_line(x1: int, y1: int, x2: int, y2: int, color: Color): void
+            + draw_circle(x: int, y: int, radius: int, color: Color): void
+            + draw_rectangle(x: int, y: int, width: int, length: int, color: Color): void
+            + draw_square(x: int, y: int, side: int, color: Color): void
+
+            }
+
+        <<interface>> Displayer
+    ```
+
+1. Créer la classe `ShellDisplayer` qui implémente l'interface `Displayer` et affiche dans le terminal des messages de la forme: 
+
+    `FormeName(x=X, y=Y, attr1=ATTR1, attr2=ATTR2, ..., attrN=ATTRN, color=(R, G, B))`
+
+    *Exemple :*    
+    `Circle(x=10, y=5, radius=20, color=(0, 0, 255))`
 
 
-## Partie IV : Sauvegarde dans une base de données
+1. Modifier la méthode `draw` de l'interface `Shape2D` pour quelle accepte en paramètre un afficheur quelconque. 
 
+1. Implémenter les méthodes `draw` des classes `Point`, `Line`, `Circle`, `Rectangle`, `Square` et `CombinedShape2D`.
+
+1. Dans le fichier `partieII.py`, compléter la fonction `run_question_5`. Tester. 
+
+1. Créer une classe `Smiley` qui est une forme composée de **3 cercles** (1 pour le visage et 2 pour les yeux), un carré pour le nez et un rectangle pour la bouche. Cette forme doit ressembler à un visage.
+
+    On fera attention à ce que l'utilisation suivant soit valide.
+    ```python
+    displayer = ShellDisplayer()
+    smiley = Smiley(100, 50, 45, (20, 20, 20)) 
+    smiley.draw(displayer)
+    # Circle(x=100, y=50, radius=22, color=(20, 20, 20))
+    # Circle(.....)
+    # Circle(.....)
+    # Square(.....)
+    # Rectangle(.....)
+    ```
+
+    Exécuter la commande `python3 partieII.py q6` pour vérifer.
+
+1. 
+
+## Partie IV : Sauvegarde de formes dans un fichier
+40 min
+
+1. Créer une classe 
 
 
 
