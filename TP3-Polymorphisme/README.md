@@ -62,13 +62,11 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 
 ## Partie II : Classes et instances 
-0h45
+45 min
 
 **Formes simples**
 
-1. Préparer son environnement de travail
-    - Créer un environnement virtuel et l'activer.
-    - Installer les dépendences (fichier *requirements.txt*)
+1. Créer un environnement virtuel et l'activer.
 
 1. Traduire les classes ci-dessus en python. On veillera à ce que les points suivants soient respectés:
     - Une classe = un fichier.
@@ -85,14 +83,14 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie un cercle de rayon 10 en position x=0 et y=0.
 
-1. Dans le fichier `partieI.py`, implémenter la fonction `run_question_4`. Cette fonction:
+1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_4`. Cette fonction:
     - utilise le constructeur par défaut pour créer un cercle
     - affiche son aire  
     - crée un rectangle de longueur 30 et de largeur 10 en position (10, 10)
     - le déplace en positon (15, 20)
     - affiche ses coordonnées x, y
 
-    Tester la fonction en lançant le script `python3 partieI.py q4`.
+    Tester la fonction en lançant le script `python3 partieII.py q4`.
 
 **Formes composées**
 
@@ -100,16 +98,16 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 1. Traduire cette extension en python. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
 
-1. Dans le fichier `partieI.py`, implémenter la fonction `run_question_6` permettant de:
+1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_6` permettant de:
     - construire une forme 2D composée de deux cercles et d'un rectangle au choix
     - afficher l'aire de cette forme
     - afficher les coordonnées de cette forme
     - appliquer une translation de 20 pixels en x et 8 pixels en y
 
-    Tester la fonction en lançant le script `python3 partieI.py q6`.
+    Tester la fonction en lançant le script `python3 partieII.py q6`.
 
 ## Partie III : Afficheur de formes
-40 min
+45 min
 
 Dans cette partie on s'intéresse à l'affichage de formes géométriques. 
 
@@ -144,7 +142,7 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
 
 1. Implémenter les méthodes `draw` des classes `Point`, `Line`, `Circle`, `Rectangle`, `Square` et `CombinedShape2D`.
 
-1. Dans le fichier `partieII.py`, compléter la fonction `run_question_5`. Tester. 
+1. Dans le fichier `partieIIII.py`, compléter la fonction `run_question_5`. Tester. 
 
 1. Créer une classe `Smiley` qui est une forme composée de **3 cercles** (1 pour le visage et 2 pour les yeux), un carré pour le nez et un rectangle pour la bouche. 
 
@@ -163,7 +161,7 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
     # Rectangle(.....)
     ```
 
-    Exécuter la commande `python3 partieII.py q6` pour vérifer.
+    Exécuter la commande `python3 partieIIII.py q6` pour vérifer.
 
 **Affichage partagé**
 
@@ -171,27 +169,17 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 
     La documentation de l'API du tableau interactif est donné dans le fichier DOC.md.
 
-1. Installer la bibliothèque `requests` qui permet d'exécuter des requêtes HTTP.
+7. Installer la bibliothèque `requests` qui permet d'exécuter des requêtes HTTP.
 
 1. Créer une classe `WebDisplayer` qui implémente l'interface `Displayer` dans le but d'afficher des formes géométriques sur le tableau interactif. 
  
-1. Créer un programme qui demande à l'utilisateur d'indiquer le numéro de l'écran d'affichage puis, en continue, lui demande trois 3 valeurs (x, y et size) et affiche le smiley correspondant. Dès que l'utilisateur entre la chaîne 'q', le programme s'arrête.
+1. Dans le ficher `partieIII.py`, implémenter la fonction `run_question_9`. Le programme demande à l'utilisateur d'indiquer le numéro de l'écran d'affichage puis, en continue, lui demande trois 3 valeurs (x, y et size) et affiche le smiley correspondant. Dès que l'utilisateur entre la chaîne `"q"`, le programme s'arrête.
 
+    Tester `python3 partieIII.py q9`
+
+1. Améliorer l'affichage de votre bonhomme et prenez une capture d'écran (à joindre dans le dossier de restitution).
 
 ## Partie IV : Sauvegarde de formes dans un fichier
-40 min
+45 min
 
-1. Créer une classe 
-
-
-
-<!-- 
-
-   La relation entre entre `Figure` et `Square` est une relation d'héritage. `Square` hérite des attributs et méthodes `Figure`.
-   ```python
-   class Fille(Mere):
-      pass
-   ```
-
-   La relation entre entre `Square` et `Point` est une relation composition. Un carré est composé de plusieurs points. -->
-
+Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier texte.
