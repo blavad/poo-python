@@ -64,6 +64,8 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 ## Partie II : Classes et instances 
 0h45
 
+**Formes simples**
+
 1. Préparer son environnement de travail
     - Créer un environnement virtuel et l'activer.
     - Installer les dépendences (fichier *requirements.txt*)
@@ -92,7 +94,9 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
     Tester la fonction en lançant le script `python3 partieI.py q4`.
 
-1. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D. 
+**Formes composées**
+
+5. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D. 
 
 1. Traduire cette extension en python. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
 
@@ -108,6 +112,8 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 40 min
 
 Dans cette partie on s'intéresse à l'affichage de formes géométriques. 
+
+**Affichage dans le terminal**
 
 1. Créer l'interface python `Displayer` respectant les spécifications ci-dessous.
 
@@ -140,13 +146,16 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
 
 1. Dans le fichier `partieII.py`, compléter la fonction `run_question_5`. Tester. 
 
-1. Créer une classe `Smiley` qui est une forme composée de **3 cercles** (1 pour le visage et 2 pour les yeux), un carré pour le nez et un rectangle pour la bouche. Cette forme doit ressembler à un visage.
+1. Créer une classe `Smiley` qui est une forme composée de **3 cercles** (1 pour le visage et 2 pour les yeux), un carré pour le nez et un rectangle pour la bouche. 
 
-    On fera attention à ce que l'utilisation suivant soit valide.
+    On fera attention à ce que l'utilisation suivante soit valide.
     ```python
     displayer = ShellDisplayer()
-    smiley = Smiley(100, 50, 45, (20, 20, 20)) 
+    smiley = Smiley(x=100, y=50, size=45, color=(20, 20, 20)) 
     smiley.draw(displayer)
+
+    # OUTPUT
+    # ------
     # Circle(x=100, y=50, radius=22, color=(20, 20, 20))
     # Circle(.....)
     # Circle(.....)
@@ -156,7 +165,18 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
 
     Exécuter la commande `python3 partieII.py q6` pour vérifer.
 
-1. 
+**Affichage partagé**
+
+On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le site [draw.david-albert.fr](http://draw.david-albert.fr) est un tableau interactif un peu particulier. Pour y dessiner une forme il faut utiliser une requête HTTP de type POST. 
+
+    La documentation de l'API du tableau interactif est donné dans le fichier DOC.md.
+
+1. Installer la bibliothèque `requests` qui permet d'exécuter des requêtes HTTP.
+
+1. Créer une classe `WebDisplayer` qui implémente l'interface `Displayer` dans le but d'afficher des formes géométriques sur le tableau interactif. 
+ 
+1. Créer un programme qui demande à l'utilisateur d'indiquer le numéro de l'écran d'affichage puis, en continue, lui demande trois 3 valeurs (x, y et size) et affiche le smiley correspondant. Dès que l'utilisateur entre la chaîne 'q', le programme s'arrête.
+
 
 ## Partie IV : Sauvegarde de formes dans un fichier
 40 min

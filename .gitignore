@@ -5,6 +5,8 @@ TP4-UML/correction
 
 **EXOS-SUPP.md
 
+settings.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
