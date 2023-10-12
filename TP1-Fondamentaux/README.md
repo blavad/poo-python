@@ -147,3 +147,8 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
 1. Réaliser les mêmes opérations appliquées à un dictionnaire.
 
    A quoi servents les méthodes `keys`, `values` et `items` ?
+
+
+## Déjà terminé ?
+
+Vous pouvez dès à présent commencer [le TP n°2 sur les objets et classes python et l'encapsulation](../TP2-Encapsulation/README.md).

@@ -1,6 +1,6 @@
 # TP n°2 : Classes, objets et encapsulation
 
-Dans ce TP, on s'intéresse l'implémentation des classes et l'utilisation des instances de classes (les objets). Nous aborderons également la notion d'encapsulation et d'héritage pour gérer des piles d'éléments. Les compétences travaillées durant cette activité sont les suivantes : 
+Dans ce TP, on s'intéresse  à l'implémentation des classes et l'utilisation des instances de classes (les objets). Nous aborderons également la notion d'encapsulation et d'héritage pour gérer. Les compétences travaillées durant cette activité sont les suivantes : 
 - Manipuler des objets usuels (listes, ensembles et dictionnaires) 
 - Implémenter des classes et instancier des objets
 - Implémenter un constructeur 
@@ -169,3 +169,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
     - créer une pile multiple constituée d'une pile LIFO et de la pile multiple précédente 
 
     Appliquer la function `test_pile` à ces deux piles multiples. Tester ce programme et vérifier que le résultat est cohérent.
+
+## Déjà terminé ?
+
+Vous pouvez dès à présent commencer [le TP n°3 sur l'héritage et le polymorphisme](../TP3-Polymorphisme/README.md).

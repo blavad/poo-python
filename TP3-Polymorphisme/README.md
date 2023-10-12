@@ -183,3 +183,7 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 45 min
 
 Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier texte.
+
+## Déjà terminé ?
+
+Vous pouvez dès à présent commencer [le TP n°4 sur la conception logicielle avec UML](../TP4-UML/README.md).
