@@ -15,4 +15,4 @@ Pour bien apprendre pendant ces travaux pratiques il est conseillé d'avoir les 
 
 ## Et ensuite ?
 
-Si votre environnement de travail est près. Vous pouvez lire [le TP n°1 sur les bases du langage de programmation python](./TP1-Fondamentaux/README.md) .
+Si votre environnement de travail est près. Vous pouvez lire [le TP n°1 sur les bases du langage de programmation python](./TP1-Fondamentaux/README.md).
