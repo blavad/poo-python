@@ -34,7 +34,7 @@ Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent êt
        print("> Module main")
        print("> ------------------------------")
       ```
-1. Exécuter ce fichier en utilisant l'interpréteur.
+1. Exécuter ce fichier en utilisant l'interpréteur. Indiquer la commande utilisé dans le compte-rendu.  🚩
 1. Exécuter le module `tp1.main`. Que ce passe-t-il ? 🚩
    > on utilisera pour cela la commande `python -m tp1.main`.
 1. Exécuter la commande `python -m tp1`. Que ce passe-t-il ? 🚩
@@ -47,15 +47,15 @@ Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent êt
       print("Hey, 3 + 2 = ", addition(3, 2))
       ```
    
-1. Exécuter ce module.
+1. Exécuter ce module. Indiquer la commande utilisé dans le compte-rendu. 🚩
 
 **Plus de modules**
 
 On souhaite désormais utiliser la fonction `addition` dans notre programme `__main__.py`.
 
-14. Importer la fonction `addition` dans le fichier `__main__.py` et changer la ligne `print("> Module 'main'")` par `print(addition(8,8))`. Qu'observe-t-on ? 🚩
+12. Importer la fonction `addition` dans le fichier `__main__.py` et changer la ligne `print("> Module 'main'")` par `print(addition(8,8))`. Qu'observe-t-on ? 🚩
 
-1. Corriger ce problème. 🚩
+1. Corriger ce problème. 
    > 💡 on pourra utiliser la variable build-in `__name__`
 
 1. Dans le dossier `tp1/tp1/math` créer le fichier `__init__.py` avec le contenu:
@@ -83,9 +83,9 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 **Environnement virtuel**
 1. Revener dans le dossier `TP1-Fondamentaux`
 1. Créer un environnement virtuel python avec le nom `.env`.
-1. Analyser le contenu du dossier `.env`. Que contient-il ?
+1. Analyser le contenu du dossier `.env`. Que contient-il ? 🚩
 1. Activer cet environnement virtuel.
-1. Afficher la liste des paquets installés dans l'environnement virtuel.
+1. Afficher la liste des paquets installés dans l'environnement virtuel. 
 1. Comparer à la liste des paquets python installés sur votre machine. 
 1. Installer les paquets nécessaires au bon fonctionnement du module `tp1` (numpy).
    > On pourra valider que la commande `python -m tp1.tp1` s'exécute bien.
@@ -94,8 +94,8 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
    
 **Installer et utiliser notre module**
 
-9. Sorter de l'environnement virtuel `.env`, créer-en un second nommé `.tp1-env`.
-1. Dans ce second environnement virtuel, installer tous les requirements du fichier `requirements.txt` en une ligne.
+9. Sortir de l'environnement virtuel `.env` et en créer un second nommé `.tp1-env`. 
+1. Dans ce second environnement virtuel, installer tous les requirements du fichier `requirements.txt` en une ligne. Indiquer la commande utilisé dans le compte-rendu. 🚩
 1. Installer également votre package `tp1`.
 1. Vérifier son installaton en exécutant le fichier `tests/test-tp1-install.py`
 
@@ -117,7 +117,7 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    obj = object()
    ```
 
-   Afficher son type:
+   Afficher son type:  🚩
    ```python
    print(type(obj))
    ```
@@ -134,19 +134,19 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    # Exemple appel méthode __str__
    print(obj.__str__())
    ```
-   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ? 
+   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ?  🚩
 
 1. Réaliser les mêmes opérations appliquées à un float.
    
-   A quoi servents les méthodes `__int__`, `__pow__`, `__trunc__` ?
+   A quoi servents les méthodes `__int__`, `__pow__`, `__trunc__` ? 🚩
 
 1. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
 
-   A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ?
+   A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ? 🚩
 
 1. Réaliser les mêmes opérations appliquées à un dictionnaire.
 
-   A quoi servents les méthodes `keys`, `values` et `items` ?
+   A quoi servents les méthodes `keys`, `values` et `items` ? 🚩
 
 
 ## Déjà terminé ?
