@@ -9,7 +9,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python et de la programmat
 - Comprendre la notion d'objet en python
 
 ## Partie 0 : Mise en place
-- Cloner ce repo : `git clone <repo>`
+- Cloner ce repo : `git clone https://github.com/blavad/poo-python.git`
 - Ouvrer un terminal à l'emplacement `poo-python/TP1-Fondamentaux`
 
 Ce dossier est le votre pendant tout le TP. Toutes les manipulations doivent être faites à l'intérieur. Il contient déjà certains fichiers qui seront à lire et/ou compléter durant le TP.  
