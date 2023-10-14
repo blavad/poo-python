@@ -1,4 +1,4 @@
-# TP 3 : Programmation Orientée Objet - Polymorphisme
+# TP 4 : Héritage et Polymorphisme
 
 Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cela, on cherchera à développer un logiciel permettant de créer et d'afficher des figures géométriques plus ou moins complexes via divers afficheurs graphiques. Les compétences travaillées durant cette activité sont les suivantes : 
 
@@ -62,7 +62,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 
 ## Partie II : Classes et instances 
-45 min
+1h30
 
 **Formes simples**
 
@@ -107,7 +107,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
     Tester la fonction en lançant le script `python3 partieII.py q6`.
 
 ## Partie III : Afficheur de formes
-45 min
+1h30
 
 Dans cette partie on s'intéresse à l'affichage de formes géométriques. 
 
@@ -186,4 +186,4 @@ Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse s
 
 ## Déjà terminé ?
 
-Vous pouvez dès à présent commencer [le TP n°4 sur la conception logicielle avec UML](../TP4-UML/README.md).
+Vous pouvez dès à présent commencer [le TP n°4 sur la conception logicielle avec UML](../TP5-UML/README.md).
