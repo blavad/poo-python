@@ -1,7 +1,7 @@
 # Compte Rendu TP 1
 
 ## Informations
-- **Nom :** *à remplacer par votre nom*
+- **Nom :** SEVERINO
 - **Prénom :** *à remplacer par votre nom*
 
 ## Partie I
