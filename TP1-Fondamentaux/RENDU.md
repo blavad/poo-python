@@ -2,12 +2,16 @@
 
 ## Informations
 - **Nom :** SEVERINO
-- **Prénom :** *à remplacer par votre nom*
+- **Prénom :** Hugo
 
 ## Partie I
 
 ### I.6. 
+Se trouvant dans "TP1-Fondamentaux" on éxécute la commande suivante : 
 
+```python
+python tp1/tp1/main.py
+```
 ### I.7. 
 
 ### I.8. 
