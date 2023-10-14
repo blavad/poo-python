@@ -66,9 +66,9 @@ Etant donné le diagramme de classes ci-dessus représentant des objets graphiqu
 
 1. Représenter une classe décrivant des livres électroniques. Les informations spécifiques à chaque livre sont : son titre, son nombre de page et le nom de l'auteur. Les actions possibles sont *pageSuivante* et *pagePrécédente*.
 
-1. Décriver en UML un diagramme de classes illustrant la description suivante : une personne possède un ou plusieurs livres électronique.
+1. Décrire en UML un diagramme de classes illustrant la description suivante : une personne possède un ou plusieurs livres électronique.
 
-1. Décriver en UML un diagramme de classes illustrant la description suivante : les disquettes, les clés USB et les disques durs sont des périphériques de stockage.
+1. Décrire en UML un diagramme de classes illustrant la description suivante : les disquettes, les clés USB et les disques durs sont des périphériques de stockage.
 
 1. Un message électronique comporte un titre ainsi que l'adresse du destinataire. Il est composé d'un en-tête et d'un corps. Il peut contenir éventuellement une ou plusieurs pièces jointes. Tracez le diagramme de classes correspondant à cette description.
 
