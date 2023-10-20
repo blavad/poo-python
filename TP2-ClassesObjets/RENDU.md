@@ -1,8 +1,9 @@
 # Compte Rendu TP 2
 
 ## Informations
-- **Nom :** *à remplacer par votre nom*
-- **Prénom :** *à remplacer par votre nom*
+- **Nom :** SEVERINO
+- **Prénom :** Hugo
+
 
 ## Partie I
 
