@@ -100,8 +100,10 @@ print(8 in A)
 dict_pow: dict[int,int]={x:x*x for x in range(-5,6)}
 ```
 
-1. Poiur : la liste `['POO', 'Python', 'Travaux Pratiques']`. Créer un dictionnaire `dict_len` dont les clés sont ces chaînes de caractères et les valeurs sont le nombre de lettres dans chacune de ces chaînes. `dict_len : dict[str,int] = {x :len(x) for x in dic}`
-
+1. Soit : la liste `['POO', 'Python', 'Travaux Pratiques']`. Créer un dictionnaire `dict_len` dont les clés sont ces chaînes de caractères et les valeurs sont le nombre de lettres dans chacune de ces chaînes. 
+```python
+dict_len : dict[str,int] = {x :len(x) for x in dic}
+```
 
     
 
