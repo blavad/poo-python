@@ -13,7 +13,13 @@ Depuis le dossier `poo-python/TP1-Fondamentaux/tp1/`,
 
 ### I.7. 
 
-Le fichier s'exécute et renvoie `"Hey, 3 + 2 = 5"`.
+Le fichier s'exécute et renvoie 
+
+```bash
+> ------------------------------
+> Module main
+> ------------------------------
+```
 
 ### I.8. et  I.9.
 
@@ -21,7 +27,7 @@ On obtient l'erreur `No module named tp1.__main__`.
 
 En effet, le dossier TP1 est un dossier et ne peut pas être exécuté directement en tant que module. 
 
--> A moins qu'un fichier `__main__.py` existe dans dossier. 
+-> A moins qu'un fichier `__main__.py` existe dans le dossier (c'est un standard python au même titre que les fichiers `__init__.py`)
 
 ### I.11. 
 
