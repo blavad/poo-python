@@ -80,7 +80,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Faire hériter les classes `LIFO` et `FIFO` de `IPile`.
 
-1. Selon vous, à quoi peut service la création d'interfaces ? 🚩
+1. Selon vous, à quoi peut service la création d'interfaces ?
 
 ## Partie IV : Généricité et héritage
 1h00
@@ -133,7 +133,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
     - `depile` : dépile un entier dans chacune des sous-piles
     - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"PileMultiple([ LIFO([0, 5, 12]), FIFO([1, 2, 3]) ])"`)
 
-    De quoi hérite cette classe ? Déclarer cette héritage dans votre code. 🚩
+    De quoi hérite cette classe ? Déclarer cette héritage dans votre code.
 
 1. Dans le programme principal du fichier `test_pile.py`
 
