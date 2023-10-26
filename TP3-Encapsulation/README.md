@@ -18,8 +18,8 @@ Commencez par créer une classe Pokemon qui contient (entre autres) :
 - un attribut `atk` qui représente la force de base de l’attaque du Pokémon.
 - un `constructeur` pour instancier des Pokémon adéquatement.
 - des `getters` (accesseurs) qui permettent de consulter les attributs (name et hp) du Pokémon.
-- une méthode `estMort()` qui retourne un boolean pour indiquer si un Pokémon est mort (hp == 0) ou non.
-- une méthode `attaquer(Pokemon p)` qui permet au Pokémon appelant d’attaquer le Pokémon passé en paramètre. L’attaque déduit `atk` points de la vie `hp` du Pokémon attaqué `p`.
+- une méthode `is_dead` qui retourne un boolean pour indiquer si un Pokémon est mort (hp == 0) ou non.
+- une méthode `attaquer` qui permet au Pokémon appelant d’attaquer le Pokémon passé en paramètre. L’attaque déduit `atk` points de la vie `hp` du Pokémon attaqué `p`.
 - une redéfinition de la méthode `__str__` qui renvoie une chaîne de caractères permettant d'afficher les informations du Pokémon (ex: `Pokemon(nom=Bulbizarre, hp=20, atk=5)`).
 
 En plus des Pokémon normaux (décrits à travers la classe Pokemon) on recense trois types de Pokémon. Les Pokémon de type Feu, les Pokémon de type Eau et les Pokémon de type Plante :
