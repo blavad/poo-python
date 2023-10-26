@@ -1,9 +1,9 @@
 class Pokemon:
     _nom: str
-    _hp: int
-    _atk: int
+    _hp: float
+    _atk: float
 
-    def __init__(self, nom: str, hp: int, atk: int) -> None:
+    def __init__(self, nom: str, hp: float, atk: float) -> None:
         self._nom = nom
         self._hp = hp
         self._atk = atk
@@ -23,15 +23,17 @@ class Pokemon:
     def is_dead(self) -> bool:
         return self.get_hp() == 0
 
-    def _recevoir_degats(self, degats: int) -> None:
+    def _recevoir_degats(self, degats: float) -> None:
         self._hp -= degats
+        if self._hp < 0:
+            self._hp = 0
 
     def __str__(self) -> str:
         return f"Pokemon(nom={self._nom}, hp={self._hp}, atk={self._atk})"
 
 
 class PokemonFeu(Pokemon):
-    def __init__(self, nom: str, hp: int, atk: int) -> None:
+    def __init__(self, nom: str, hp: float, atk: float) -> None:
         super().__init__(nom, hp, atk)
 
     def attaquer(self, pokemon: Pokemon) -> None:
@@ -44,7 +46,7 @@ class PokemonFeu(Pokemon):
 
 
 class PokemonEau(Pokemon):
-    def __init__(self, nom: str, hp: int, atk: int) -> None:
+    def __init__(self, nom: str, hp: float, atk: float) -> None:
         super().__init__(nom, hp, atk)
 
     def attaquer(self, pokemon: Pokemon) -> None:
@@ -57,7 +59,7 @@ class PokemonEau(Pokemon):
 
 
 class PokemonPlante(Pokemon):
-    def __init__(self, nom: str, hp: int, atk: int) -> None:
+    def __init__(self, nom: str, hp: float, atk: float) -> None:
         super().__init__(nom, hp, atk)
 
     def attaquer(self, pokemon: Pokemon) -> None:
