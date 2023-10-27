@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+ 
 class Pokemon:
     def __init__(self, nom: str, hp: float, atk: float) -> None:
         self._nom = nom
@@ -31,9 +31,6 @@ class Pokemon:
 
 
 class PokemonFeu(Pokemon):
-    def __init__(self, nom: str, hp: float, atk: float) -> None:
-        super().__init__(nom, hp, atk)
-
     def attaquer(self, pokemon: Pokemon) -> None:
         if isinstance(pokemon, PokemonPlante):
             pokemon._recevoir_degats(2 * self.get_atk())
@@ -44,9 +41,6 @@ class PokemonFeu(Pokemon):
 
 
 class PokemonEau(Pokemon):
-    def __init__(self, nom: str, hp: float, atk: float) -> None:
-        super().__init__(nom, hp, atk)
-
     def attaquer(self, pokemon: Pokemon) -> None:
         if isinstance(pokemon, PokemonFeu):
             pokemon._recevoir_degats(2 * self.get_atk())
@@ -57,9 +51,6 @@ class PokemonEau(Pokemon):
 
 
 class PokemonPlante(Pokemon):
-    def __init__(self, nom: str, hp: float, atk: float) -> None:
-        super().__init__(nom, hp, atk)
-
     def attaquer(self, pokemon: Pokemon) -> None:
         if isinstance(pokemon, PokemonEau):
             pokemon._recevoir_degats(2 * self.get_atk())
