@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>poo-python : Interactive Board</title>
+    <!-- Import Socket.io library -->
+    <script
+      src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+      integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Import interactive board object -->
+    <script src="/static/InteractiveBoard.js"></script>
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <style>
+      * {
+        margin: 5px;
+      }
+      body {
+        background-color: #eaeaea;
+        font-family: "Tangerine", serif;
+        font-size: 30px;
+      }
+      canvas {
+        background-color: white;
+      }
+      .canvas-container {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+    <!-- Create Socket.io instance -->
+    <script>
+      const board = new InteractiveBoard();
+    </script>
+  </head>
+  <body>
+    <h1>Interactive Display <span id="sessionID"></span></h1>
+    <div class="canvas-container">
+      <canvas
+        id="canvas1"
+        class="canvas"
+        width="600"
+        height="500"
+        style="border: 7px solid #ff2453"
+      ></canvas>
+      <canvas
+        id="canvas2"
+        class="canvas"
+        width="600"
+        height="500"
+        style="border: 7px solid #20abf3"
+      ></canvas>
+    </div>
+  </body>
+</html>
