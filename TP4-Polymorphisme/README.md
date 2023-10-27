@@ -79,9 +79,9 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
     - Les méthodes `area` et `move` sont correctement implémentés.
     - La méthode `draw` lève une exception de type `NotImplementedError` car elle sera implémentée plus tard dans le TP. 
     - Les types sont déclarés selon la norme PEP 483.
-    - Le code est documenté.
+    - (optionnel) Le code est documenté.
 
-1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie un cercle de rayon 10 en position x=0 et y=0.
+1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie une instance de cercle de rayon 10 en position x=0 et y=0.
 
 1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_4`. Cette fonction:
     - utilise le constructeur par défaut pour créer un cercle
@@ -182,7 +182,7 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 ## Partie IV : Sauvegarde de formes dans un fichier
 45 min
 
-Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier texte.
+Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier texte. On fera également en sorte de pouvoir reconstruire une forme depuis un fichier précédemment créé.
 
 ## Déjà terminé ?
 

@@ -7,9 +7,46 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 - Comprendre le concept d'encapsulation et savoir l'utiliser convenablement
 - Utiliser les bonnes pratiques de codage python
 
+## Partie I : Pokémon
+45min
 
-## Partie I : Créer nos premiers objets
-50min
+Les Pokémon sont certes de très mignonnes créatures, mais ils sont également un bon exemple pour illustrer l’héritage. 
+
+Commencez par créer une classe Pokemon qui contient (entre autres) :
+- un attribut `nom` qui contient le nom du Pokémon.
+- un attribut `hp` (pour Health Points) qui représente les points de vie du Pokémon.
+- un attribut `atk` qui représente la force de base de l’attaque du Pokémon.
+- un `constructeur` pour instancier des Pokémon adéquatement.
+- des `getters` (accesseurs) qui permettent de consulter les attributs (name et hp) du Pokémon.
+- une méthode `is_dead` qui retourne un boolean pour indiquer si un Pokémon est mort (hp == 0) ou non.
+- une méthode `attaquer` qui permet au Pokémon appelant d’attaquer le Pokémon passé en paramètre. L’attaque déduit `atk` points de la vie `hp` du Pokémon attaqué `p`.
+- une redéfinition de la méthode `__str__` qui renvoie une chaîne de caractères permettant d'afficher les informations du Pokémon (ex: `Pokemon(nom=Bulbizarre, hp=20, atk=5)`).
+
+En plus des Pokémon normaux (décrits à travers la classe Pokemon) on recense trois types de Pokémon. Les Pokémon de type Feu, les Pokémon de type Eau et les Pokémon de type Plante :
+- les Pokémon de type Feu sont super efficaces contre les Pokémon de type *Plante* et leur infligent deux fois plus de dégâts `(2*atk)`. Par contre, ils sont très peu efficaces contre les Pokémon de type Eau ou de type Feu et ne leur infligent que la moitié des dégâts `(0.5*atk)`. Ils infligent des dégâts normaux aux Pokémon de type Normal.
+- les Pokémon de type Eau sont super efficaces contre les Pokémon de type Feu et leur infligent deux fois plus de dégâts `(2*atk)`. Par contre, ils sont très peu efficaces contre les Pokémon de type Eau ou de type Plante et ne leur
+infligent que la moitié des dégâts `(0.5*atk)`. Ils infligent des dégâts normaux
+aux Pokémon de type Normal.
+- enfin, les Pokémon de type Plante sont super efficaces contre les Pokémon de type Eau et leur infligent deux fois plus de dégâts `(2*atk)`. Par contre, ils sont très peu efficaces contre les Pokémon de type Plante ou de type Feu et ne leur
+infligent que la moitié des dégâts `(0.5*atk)`. Ils infligent des dégâts normaux aux Pokémon de type Normal.
+
+
+Créez trois classes `PokemonFeu`, `PokemonEau` et `PokemonPlante` qui héritent de la classe Pokemon et qui représentent les trois types de Pokémon mentionnés ci-dessus. Ensuite, amusez-vous à faire des combats de Pokémon.
+
+⚠️ **Remarque :** Afin de reconnaître le type d'un Pokemon, nous pourrons utiliser la fonction python `isinstance`. 
+
+```python
+# Exemple d'utilisation de "isinstance"
+
+pokemon = PokemonFeu("Salamèche", 60, 10)
+
+print(isinstance(pokemon, PokemonFeu)) # True
+print(isinstance(pokemon, PokemonEau)) # False
+
+```
+
+## Partie II : Les piles
+30min
 
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 - le nom des variables est clair et explicite 
@@ -36,17 +73,17 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
 
-## Partie II : Interfaces de programmation
-20min
+## Partie III : Interfaces de programmation
+15min
 
 1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`. 
 
 1. Faire hériter les classes `LIFO` et `FIFO` de `IPile`.
 
-1. Selon vous, à quoi peut service la création d'interfaces ? 🚩
+1. Selon vous, à quoi peut service la création d'interfaces ?
 
-## Partie III : Généricité et héritage
-50min
+## Partie IV : Généricité et héritage
+1h00
 
 1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous.
 
@@ -96,7 +133,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
     - `depile` : dépile un entier dans chacune des sous-piles
     - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"PileMultiple([ LIFO([0, 5, 12]), FIFO([1, 2, 3]) ])"`)
 
-    De quoi hérite cette classe ? Déclarer cette héritage dans votre code. 🚩
+    De quoi hérite cette classe ? Déclarer cette héritage dans votre code.
 
 1. Dans le programme principal du fichier `test_pile.py`
 
@@ -107,4 +144,10 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
     
 ## Déjà terminé ?
 
-Vous pouvez dès à présent commencer [le TP n°4 sur l'héritage et le polymorphisme](../TP4-Polymorphisme/README.md).
+Vous pouvez reprendre la **Partie I: Pokemon** et aller plus loin dans la conception du jeu vidéo Pokemon. On pourra par exemple introduire les notions suivantes :
+- `Dresseur` : C'est quelqu'un qui a attrapé un ou plusieurs Pokémons et qui fait des combats de Pokémons contre d'autres dresseurs. Il se charge de l'éducation de ses créatures et de leur entraînement.
+- `Equipe` : L'équipe de Pokémon que le dresseur a sur lui. Il ne peut porter que 6 Pokémon au maximum sur lui, il est interdit par la loi d'en avoir plus.
+- `Pokedex` : Objet qui permet de recenser les nombreuses espèces de Pokémon. C'est une encyclopédie électronique qui enregistre le poids, la taille, et même l'empreinte du Pokémon, et qui donne une description et les caractéristique du monstre rencontré. 
+- `Pokeball` : Objet rond, rouge et blanc, qui permet d'attraper les Pokémon. Lorsque le Pokémon sauvage est affaibli, le dresseur lance une Poké Ball vierge dessus. Elle aspirera la créature et l'enfermera dedans si le Pokémon est trop faible pour y échapper. Elle sert ensuite de maison au Pokémon apprivoisé : le Pokémon y passe le plus clair de son temps et en sort pour combattre ou se restaurer.
+
+Les définitions des termes ci-dessus sont tirés du site [Pokebip](https://www.pokebip.com/page/general/lexique).
