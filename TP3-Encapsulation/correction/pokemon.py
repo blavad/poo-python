@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Pokemon:
     def __init__(self, nom: str, hp: float, atk: float) -> None:
         self._nom = nom
@@ -13,7 +15,7 @@ class Pokemon:
     def get_atk(self) -> str:
         return self._atk
 
-    def attaquer(self, pokemon) -> None:
+    def attaquer(self, pokemon: Pokemon) -> None:
         pokemon._recevoir_degats(self.get_atk())
 
     def is_dead(self) -> bool:
