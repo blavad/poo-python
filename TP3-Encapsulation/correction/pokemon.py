@@ -1,8 +1,4 @@
 class Pokemon:
-    _nom: str
-    _hp: float
-    _atk: float
-
     def __init__(self, nom: str, hp: float, atk: float) -> None:
         self._nom = nom
         self._hp = hp
