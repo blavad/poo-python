@@ -85,7 +85,6 @@ Dans cette partie : 🚩 = commande + résultat
     - la liste des entiers de 0 à 14 🚩
     - la liste des entiers de 11 à 17
     - la liste des entiers de 3 à 120 par pas de 3. 🚩
-    - la liste des entiers de 3 à 120 par pas de 3.
 
 1. Utiliser la fonction `range()` et / ou une liste en compréhension pour:
     - ajouter 3 à chaque élément de la liste `[5, 8, 10]`. 🚩
