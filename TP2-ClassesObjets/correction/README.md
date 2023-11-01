@@ -1,66 +1,4 @@
-# TP n°2 : Classes et objets
-
-Dans ce TP, on s'intéresse  à l'utilisation d'objets usuels python. Les compétences travaillées durant cette activité sont les suivantes : 
-- Comprendre le typage dynamique
-- Manipuler des listes en python
-- Manipuler des ensembles en python
-- Manipuler des disctionnaires en python 
-- Instancier des objets
-
-
-## Partie I : Comprendre la notion d'objet et de typage dynamique en python 
-45min
-
-**Manipuler nos premiers objets**
-1. Commencer par regarder cette [vidéo sur les notions de variables, objets et typage dynamique en python](https://www.youtube.com/watch?v=vSsTKNCSKnU).
-1. Lancer l'interpréteur python en mode interactif
-
-Dans les versions récentes de python, tout est objet. En effet, les types intégrés à python héritent tous de la même classe parente `object`. C'est le cas notamment de `bool`, `int`, `float`, `str`, `list`, `dict`, `set`, etc.
-
-
-3. Exécuter les instructions suivantes:
-   
-   Instancier la classe objet:
-   ```python
-   obj = object()
-   ```
-
-   Afficher son type: 
-   ```python
-   print(type(obj))
-   ```
-
-   Afficher ses attributs et méthodes:
-   ```python
-   print(dir(obj))
-   ```
-   
-   ***Note :*** On distingue les méthodes built-in des autres par leur notation particulière `__method__`
-   
-   Afficher le résultat de l'appel de quelques-unes de ces méthodes:
-   ```python
-   # Exemple appel méthode __str__
-   print(obj.__str__())
-
-   # OU 
-    
-   print(str(obj))
-   ```
-   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ?  🚩
-
-1. Réaliser les mêmes opérations appliquées à un float.
-   
-   A quoi servents les méthodes `__int__`, `__pow__`, `__trunc__` ? 🚩
-
-1. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
-
-   A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ? 🚩
-
-1. Réaliser les mêmes opérations appliquées à un dictionnaire.
-
-   A quoi servents les méthodes `keys`, `values` et `items` ? 🚩
-
-
+# Correction TP n°2 : Classes et objets
 
 ## Partie II : Instancier et manipuler des objets usuels 
 1h30
@@ -80,11 +18,32 @@ Dans cette partie : 🚩 = commande + résultat
     - afficher la sous-liste du 3e élément à la fin de la liste 
     - afficher le dernier élément en utilisant l’indiçage négatif. 🚩
 
+```python
+liste1 = [11, 40, 18, 5, 56]
+liste1.append(12)
+print(liste1)
+liste1.reverse()
+print(liste1)
+print(liste1.index(18))
+liste1.remove(40)
+print(liste1[1:3])
+print(liste1[:4])
+print(liste1[3:])
+print(liste1[-1])
+```
+
 
 1. Utiliser la fonction `range()` pour créer :
     - la liste des entiers de 0 à 14 🚩
     - la liste des entiers de 11 à 17
     - la liste des entiers de 3 à 120 par pas de 3. 🚩
+
+    
+```python
+l1 = list(range(15))
+l2 = list(range(11, 18))
+l3 = list(range(3, 121, 3))
+```
 
 1. Utiliser la fonction `range()` et / ou une liste en compréhension pour:
     - ajouter 3 à chaque élément de la liste `[5, 8, 10]`. 🚩
@@ -93,6 +52,14 @@ Dans cette partie : 🚩 = commande + résultat
     - créer la liste `['pt', 'ph', 'py', 'ot', 'oh', 'oy']` à partir des chaînes `'po'` et `'thy'`. 
         
         ***Aide*** : on pourra utiliser deux boucles for imbriquées.
+
+
+```python
+l1 = [x + 3 for x in [5, 8, 10]]
+l2 = [x + 3 for x in range(11) if x >= 3]
+l3 = [x / 100 for x in range(-100, 101)]
+l4 = [x + y for x in "po" for y in "thy"]
+```
 
 **Manipuler des ensembles**
 
@@ -107,6 +74,20 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 
 ***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
 
+
+```python
+A = {3, 7, 8, 10}
+B = {2, 7, 10}
+
+print(8 in A)
+print(3 in B)
+print(A - B)
+print(B - A)
+print(A.union(B))
+print(A.intersection(B))
+print({8, 10}.issubset(A))
+```
+
 **Manipuler des dictionnaires**
 
 1. Définir les dictionnaires suivants `shape1 = {'shape': 'circle', 'position': {'x': 10, 'y': 10}, 'radius': 4}`, puis effectuer les actions suivantes:
@@ -117,7 +98,16 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
     - modifier la valeur de la clé `'shape'` en `'square'` 🚩
     - ajouter le couple  clé='side' et valeur=4 au dictionnaire 🚩
 
-1. Utiliser un dictionnaire en compréhension pour:
+```python
+print(shape1.keys())
+print('position' in shape1)
+print('circle' in shape1.values())
+del shape1['radius']
+shape1['shape'] = 'square'
+shape1['side'] = 4
+```
+
+2. Utiliser un dictionnaire en compréhension pour:
     - créer un dictionnaire `dict_pow` dont les clés sont les entiers allant de -5 à 5 et les valeurs sont ces même entiers mis au carré. 🚩
     
         **Note :** donner de façon explicite le type de ce dernier
@@ -130,6 +120,11 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
         - 1ère méthode : utiliser l'opérateur union `d1 | d2`
         - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`. 
 
-## Déjà terminé ?
+```python
+dict_pow : dict[int, int] = { x: x**2 for x in range(-5, 6)}
 
-Vous pouvez dès à présent commencer [le TP n°3 sur l'encapsulation](../TP3-Encapsulation/README.md).
+dict_len : dict[string, int] = { x : len(x) for x in ['POO', 'Python', 'Travaux Pratiques']}
+
+dict_fusion_1 = dict_pow | dict_len
+dict_fusion_2 = {**dict_pow, **dict_len}
+```

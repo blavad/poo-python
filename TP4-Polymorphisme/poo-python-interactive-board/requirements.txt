@@ -1,0 +1,6 @@
+requests
+gunicorn==20.1.0 
+Flask
+Flask-SocketIO
+eventlet==0.30.2
+# gevent-websocket
