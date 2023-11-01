@@ -4,6 +4,11 @@ from typing import TypeVar, Generic
 T = TypeVar('T')
 
 class Ipile(Generic[T],ABC):
+
+    @abstractmethod
+    def __init__(self,element :T):
+        pass
+
     @abstractmethod
     def empile(self,element :T) -> None:
         pass
@@ -44,4 +49,4 @@ class FIFO(Generic[T],Ipile[T]):
             print("On ne peut enlever un élement d'une liste vide")
     
     def __str__(self):
-        return f"LIFO({self._stack})"
+        return f"FIFO({self._stack})"
