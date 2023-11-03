@@ -55,7 +55,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 1. L'attribut **radius** est-il accessible pour un objet **Rectangle** ?
 1. Un objet **Circle** possède-t-il un attribut **color**
 1. Peut-on appliquer la méthode **move** à un objet **Point** ?
-1. Grâce à quelle notion de l'approche objet, la méthode **rotate** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
+1. Grâce à quelle notion de l'approche objet, la méthode **area** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
 1. a. Quelle hypothèse doit-on considérer pour rendre la classe **Shape2D** abstraite ?
 
    b. Quel est l'intérêt d'éviter que cette surclasse soit concrète ?
