@@ -24,7 +24,7 @@ class Displayer(Generic[T],ABC):
         pass
 
     @abstractmethod
-    def draw_quare(self,x:int,y:int,side : int,color:color) -> None:
+    def draw_square(self,x:int,y:int,side : int,color:color) -> None:
         pass
 
 

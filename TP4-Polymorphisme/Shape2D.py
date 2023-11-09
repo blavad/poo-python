@@ -6,11 +6,11 @@ class InvalidColorError(Exception):
 
 
 T = TypeVar('T')
-color = tuple[int,int,int]
+Color = tuple[int,int,int]
 class Shape2D(Generic[T],ABC):
 
     
-    def __init__(self,x: float,y: float,color: color) -> None:
+    def __init__(self,x: float,y: float,color: Color) -> None:
         if not self.couleurvalide:
             raise InvalidColorError
         self._xpos = x 
@@ -30,12 +30,12 @@ class Shape2D(Generic[T],ABC):
     def get_xy(self) -> tuple[int,int]:
         return [self._xpos,self._ypos]
 
-    @abstractmethod
-    def draw(self,afficheur):
-        
-        raise NotImplementedError("Class not implemented")
     
-    def couleurvalide(self, color:color) -> bool:
+    def draw(self, displayer: Displayer) -> None:
+        displayer.display("Drawing shape at {},{} with color {}".format(self._xpos, self._ypos, self._color))
+        
+    
+    def couleurvalide(self, color:Color) -> bool:
         return all(0 <= value <= 255 for value in color)
 
 

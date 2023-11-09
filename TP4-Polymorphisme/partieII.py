@@ -23,6 +23,9 @@ def run_question_6() -> None:
     c = rectangle(30,10,{255, 255, 255},10,10)
     d=CombinedShape2D([a,b,c])
     print(d.area())
+    print(d.get_xy())
+    d.move(1,1)
+    print(d.get_xy())
     pass
 
 

@@ -21,6 +21,13 @@ class CombinedShape2D(Shape2D):
 
     def area(self):
         return self._area
+    
+    def get_xy(self):
+        return [self._x,self._y]
+    
+    def move(self,deltaX : int,deltaY : int) -> None:
+        self._x += deltaX
+        self._y += deltaY
 
 
 
