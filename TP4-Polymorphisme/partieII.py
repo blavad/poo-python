@@ -1,13 +1,28 @@
 import sys
+from circle import circle
+from rectangle import rectangle
+from CombinedShape2D import CombinedShape2D
 
 
 def run_question_4() -> None:
-    # Ici vient le code de la question 4
+    a= circle()
+    print(a.area())
+
+    b=rectangle(30,10,{255, 255, 255},10,10)
+
+    b.move(5,10)
+
+    print(b.get_xy())
+
     pass
 
 
 def run_question_6() -> None:
-    # Ici vient le code de la question 6
+    a = circle()
+    b = circle(5,5,{0,0,0}, 30)
+    c = rectangle(30,10,{255, 255, 255},10,10)
+    d=CombinedShape2D([a,b,c])
+    print(d.area())
     pass
 
 
