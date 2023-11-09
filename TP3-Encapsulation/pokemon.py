@@ -60,6 +60,6 @@ Salameche = PokemonFeu("Salamèche", 60, 10)
 
 Carapuce = PokemonEau("carapuce", 80, 20)
 
-print(Salameche)
+print(Salameche,Carapuce)
 Salameche.attaquer(Carapuce)
 print(Salameche,Carapuce)
