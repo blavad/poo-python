@@ -1,24 +1,36 @@
 import sys
-
+import sys
+from circle import circle
+from rectangle import rectangle
+from CombinedShape2D import CombinedShape2D
+from ShellDisplayer import ShellDisplayer
+from smiley import Smiley
+from Webdisplayer import Webdisplayer
 
 def run_question_5() -> None:
     # Décommenter ci-dessous et modifier le code de façon adéquate
     # On n'oubliera pas d'importer les classes Circle et CombinedShape2D
+    
+    c1 = circle()
+    c1.draw(ShellDisplayer)
+    c1.move(100, 60)
+    c2 = circle()
+    c1.move(20, 20)
+    c3 = circle()
 
-    # c1 = Circle()
-    # c1.move(100, 60)
-    # c2 = Circle()
-    # c1.move(20, 20)
-    # c3 = Circle()
-    # three_circles = CombinedShape2D(0, 0, [c1, c2, c3])
+    three_circles = CombinedShape2D([c1, c2, c3])
+    three_circles.draw(ShellDisplayer)
     pass
 
 
 def run_question_6() -> None:
     # Décommenter ci-dessous après importation de la classe Smiley
-    # displayer = ShellDisplayer()
-    # smiley = Smiley(100, 50, 45, (20, 20, 20))
-    # smiley.draw(displayer)
+    
+    smiley = Smiley(10, -100, 100, (20, 20, 20))
+    shell_displayer = ShellDisplayer()  
+    smiley.draw(shell_displayer)
+    shell_displayer = Webdisplayer()
+    smiley.draw(shell_displayer)
     pass
 
 

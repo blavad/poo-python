@@ -3,9 +3,10 @@ from math import pi
 from ShellDisplayer import ShellDisplayer
 class circle(Shape2D):
 
-    def __init__(self, x=0, y=0, color={255, 255, 255}, radius=10) -> None:
+    def __init__(self, x=0, y=0, radius=10, color=[255, 255, 255]) -> None:
         super().__init__(x, y, color)
         self._radius = radius
+        self._color = color
 
 
 
@@ -13,12 +14,12 @@ class circle(Shape2D):
         return pi * (self._radius ** 2)
     
     def draw(self,afficheur) -> None:
-        shell_displayer = afficheur()
+        shell_displayer = afficheur
         return shell_displayer.draw_circle(self._xpos, self._ypos, self._radius, self._color)
         
-
-b = circle(5,5,{0,0,0}, 30)
-b.draw(ShellDisplayer)
+if __name__ == "__main__":
+    b = circle(5,5,{0,0,0}, 30)
+    b.draw(ShellDisplayer)
 
 
     

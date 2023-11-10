@@ -1,4 +1,4 @@
-import Shape2D
+from Shape2D import Shape2D
 from ShellDisplayer import ShellDisplayer
 
 class point(Shape2D):
@@ -16,5 +16,7 @@ class point(Shape2D):
         shell_displayer = afficheur()
         return shell_displayer.draw_point(self._xpos, self._ypos, self._color)
     
-b = point(5,5,{0,0,0})
-b.draw(ShellDisplayer)
+
+if __name__ == "__main__":
+    b = point(5,5,{0,0,0})
+    b.draw(ShellDisplayer)

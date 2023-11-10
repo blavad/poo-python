@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import TypeVar, Generic
 from Displayer import Displayer
+
 class InvalidColorError(Exception):
     pass
 
@@ -30,9 +31,10 @@ class Shape2D(Generic[T],ABC):
     def get_xy(self) -> tuple[int,int]:
         return [self._xpos,self._ypos]
 
-    
+    @abstractmethod
     def draw(self, displayer: Displayer) -> None:
-        displayer.display("Drawing shape at {},{} with color {}".format(self._xpos, self._ypos, self._color))
+        pass
+
         
     
     def couleurvalide(self, color:Color) -> bool:
