@@ -1,4 +1,4 @@
-# TP 4 : UML
+# TP 5 : UML
 
 Dans ce TP, on s'intéresse à la conception de logiciels avec UML. Ce TP est en grande partie à réaliser sur papier.
 
@@ -29,6 +29,8 @@ En particulier:
 
 ## Partie II : Commerce électronique
 
+1h15
+
 Voici la description d'un système de commerce électronique :
 
 - Un utilisateur (client) qui se connecte à un site de commerce électronique choisit parmi les produits proposés.
@@ -43,18 +45,22 @@ Voici la description d'un système de commerce électronique :
 
 **3.** Complétez le diagramme en ajoutant le concept de client premium. Ce type de clients bénéficie d'une réduction pour ses achats et les informations de ses cartes de crédit sont sauvegardées par le système.
 
-**4.** Décrivez le système à l'aide d'un diagramme de séquences.
+**4.** Décrivez l'ajout d'un article dans le panier à l'aide d'un diagramme de séquences.
 
 ## Partie III :
+
+30min
 
 L'école GEMA a besoin de connaître les moyennes pour ses 3 filières (IASchool, CyberManagement et ...) pour toutes les matières et pour tous les étudiants.
 
 On suppose que les filières ont le même nombre de matières.
 
 1. Identifier les classes et décrire le diagramme de classe
-2. Etablir un scénario pour effectuer la moyennes de GEMA
+2. Etablir un scénario (=diagramme de séquences) pour effectuer la moyenne de GEMA
 
-## Partie IV : Donner le diagramme UML correspondant au système logiciel du TP 3
+## Partie IV : Donner le diagramme de classes correspondant au TP 3
+
+30min
 
 <!--
 

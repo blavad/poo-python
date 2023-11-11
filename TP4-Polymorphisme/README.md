@@ -55,7 +55,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 1. L'attribut **radius** est-il accessible pour un objet **Rectangle** ?
 1. Un objet **Circle** possède-t-il un attribut **color**
 1. Peut-on appliquer la méthode **move** à un objet **Point** ?
-1. Grâce à quelle notion de l'approche objet, la méthode **rotate** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
+1. Grâce à quelle notion de l'approche objet, la méthode **area** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
 1. a. Quelle hypothèse doit-on considérer pour rendre la classe **Shape2D** abstraite ?
 
    b. Quel est l'intérêt d'éviter que cette surclasse soit concrète ?
@@ -185,11 +185,28 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 
 ## Partie IV : Sauvegarde de formes dans un fichier
 
-45 min
+30 min
 
 Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier JSON. On fera également en sorte de pouvoir reconstruire une forme depuis un fichier précédemment créé.
 
 **Aide :** Un dictionnaire python peut être simplement transcrit au format JSON en utilisant la fonction [dumps](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/) du module [json](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/).
+
+## Partie V : Pictionary
+
+Dans cette dernière partie on se propose de développer une version un peu particulière du jeu pictionary.
+
+Le déroulement du jeu est le suivant:
+
+- Deux joueurs jouent de façon collaborative
+- Le premier joueur pense à 1 objet (par exemple: une voiture, un arbre et une limace)
+- Il crée à la main un fichier JSON dans lesquels il tente de décrire les objets imaginés (dans format de la partie III). On pourra nommer le fichier du joueur 1 `objet-j1.json`.
+- Au lancement du programme `pictionary`, le programme demande l'identifiant d'un afficheur partagé puis:
+  - charge l'objet dans une forme 2D multiple
+  - affiche la première sous-forme de l'objet pendant 5 secondes
+  - au terme de ces 5 secondes le second joueur peut, dans le terminal, écrire le nom de l'objet qu'il pense que le joueur 1 a voulu dessiner
+  - le programme compare l'entrée du joueur 2 au résultat et:
+    1. s'il a bon, le joueur gagne `10 - n` points, où `n` est le nombre de tour mis pour trouver la réponse.
+    2. sinon le programme affiche les 2 premières sous formes pendant 5 secondes puis laisse le joueur 1 faire une seconde proposition. S'il trouve il gagnera donc `10 - 2 = 8 points`. Sinon, o le programme affichera les 3 premières sous formes pendant 5 secondes et ainsi de suite jusqu'à `n=10` répétitions.
 
 ## Déjà terminé ?
 
