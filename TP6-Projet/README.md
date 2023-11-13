@@ -2,9 +2,9 @@
 
 ## Informations générales
 
-- Nombre de personnes: 1 ou 2
-- Date de validation du sujet: 24 novembre
-- Date de rendu: avant Noël
+- Nombre de personnes : 1 ou 2
+- Date de validation du sujet : 24 novembre
+- Date de rendu : 22 décembre
 
 ## Choix du sujet
 
