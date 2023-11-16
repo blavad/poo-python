@@ -2,7 +2,6 @@
 
 ## Informations générales
 
-- Nombre de personnes : 1 ou 2
 - Date de validation du sujet : 24 novembre
 - Date de rendu : 22 décembre
 
@@ -15,7 +14,7 @@ Le choix du sujet est libre mais doit répondre aux contraintes suivantes:
 
 Le projet peut utiliser des librairies externes mais ce n'est pas une obligation.
 
-Des exemples de sujets possible sont l'élaboration:
+Des exemples de sujets possible sont listés ci-dessous:
 
 - un logiciel d'analyse de données
 - un logiciel gestion d'un club de billard
@@ -64,7 +63,7 @@ Total - **20pts**
 
 - Code - **10pts**
 
-  - Lisibilité du code (conventions de nommages, espacements, typage explicite, documentation) - **2pts**
+  - Lisibilité du code (conventions de nommages, espacements, typage explicite) - **2pts**
   - Qualité du code (choix de conception, respect de l'encapsulation de données, séparation des responsabilités) - **2pts**
   - Qualité du logiciel du point de vue utilisateur (aboutissement du logiciel, simplicité d'utilisation) - **4pts**
   - Héritage et des surcharge d'opérateurs bien exécutés - **1pts**
@@ -76,3 +75,22 @@ Total - **20pts**
   - si pas d'interactions entre objets
 - Bonus - jusqu'à **2pts**
   - au cas par cas, valorisation possible d'une partie particulièrement bien exécutée
+
+## Exemples de sujet
+
+### Description du sujet 1
+
+**Logiciel d'analyse de données de NBA**
+
+La NBA est la principale ligue de basket-ball au monde. Cette ligue est située aux Etats-Unis et fait intervenir 30 équipes différentes. Chaque équipe a un nom (exemples: Bulls, Celtics, Lakers, Spurs, ...) et est localisée dans une ville (exemples: Chicago, Boston, Los Angeles, San Antonie, ...).
+
+L'objectif du projet est de développer un logiciel d'analyse de données de NBA. Ce logiciel sera utilisé par les managers des équipes de NBA afin de gérer et d'analyser les données de leur équipe :
+
+- la liste des équipes et les joueurs qui y jouent
+- les résultats des différentes équipes
+- les informations sur un joueur (nom, origine, début en NBA, ...)
+- les statistiques d'un joueur (temps de jeu, points, passes décisives et rebonds par match)
+- ajouter un nouveau joueur à l'équipe
+- ...
+
+Le logiciel pourra utiliser les données provenant d'une API dédiée : https://rapidapi.com/api-sports/api/api-nba/
