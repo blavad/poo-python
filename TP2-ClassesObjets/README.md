@@ -48,22 +48,14 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    ```
    A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ?  🚩
 
-1. Réaliser les mêmes opérations appliquées à un float.
-   
-   A quoi servents les méthodes `__int__`, `__pow__`, `__trunc__` ? 🚩
-
 1. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
 
    A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ? 🚩
 
-1. Réaliser les mêmes opérations appliquées à un dictionnaire.
-
-   A quoi servents les méthodes `keys`, `values` et `items` ? 🚩
-
 
 
 ## Partie II : Instancier et manipuler des objets usuels 
-1h30
+1h00
 
 Dans cette partie : 🚩 = commande + résultat
 
@@ -93,7 +85,7 @@ Dans cette partie : 🚩 = commande + résultat
     - créer la liste `['pt', 'ph', 'py', 'ot', 'oh', 'oy']` à partir des chaînes `'po'` et `'thy'`. 
         
         ***Aide*** : on pourra utiliser deux boucles for imbriquées.
-
+<!-- 
 **Manipuler des ensembles**
 
 Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affichez les résultats suivants :
@@ -105,7 +97,7 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 - le test d'inclusion du sous-ensemble $\{8, 10\}$ dans l'ensemble A
 
 
-***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
+***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__`  -->
 
 **Manipuler des dictionnaires**
 
