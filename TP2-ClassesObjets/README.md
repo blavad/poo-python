@@ -81,10 +81,10 @@ Dans cette partie : 🚩 = commande + résultat
 1. Utiliser une liste en compréhension pour:
     - ajouter 3 à chaque élément de la liste `[5, 8, 10]`. 🚩
     - ajouter 3 à chaque élément d'une liste de 0 à 10, mais seulement si l'élément est supérieur ou égal à 3. 🚩
-    - définir la liste des nombres flottants compris entre -1 et 1 avec un décalage de 0.01.
-    - créer la liste `['pt', 'ph', 'py', 'ot', 'oh', 'oy']` à partir des chaînes `'po'` et `'thy'`. 
-        
-        ***Aide*** : on pourra utiliser deux boucles for imbriquées.
+    <!-- - définir la liste des nombres flottants compris entre -1 et 1 avec un décalage de 0.01. -->
+    <!-- - créer la liste `['pt', 'ph', 'py', 'ot', 'oh', 'oy']` à partir des chaînes `'po'` et `'thy'`.  -->
+<!--         
+        ***Aide*** : on pourra utiliser deux boucles for imbriquées. -->
 
 <!-- 
 
@@ -98,8 +98,8 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 - l'ensemble $A \cap B$ (l'intersection) 🚩
 - le test d'inclusion du sous-ensemble $\{8, 10\}$ dans l'ensemble A -->
 
-
-***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
+<!-- 
+***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__`  -->
 
 ## Partie III : Créer des fonctions et des modules 
 45min
