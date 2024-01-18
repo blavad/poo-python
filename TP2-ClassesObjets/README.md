@@ -78,7 +78,7 @@ Dans cette partie : 🚩 = commande + résultat
     - la liste des entiers de 11 à 17
     - la liste des entiers de 3 à 120 par pas de 3. 🚩
 
-1. Utiliser la fonction `range()` et / ou une liste en compréhension pour:
+1. Utiliser une liste en compréhension pour:
     - ajouter 3 à chaque élément de la liste `[5, 8, 10]`. 🚩
     - ajouter 3 à chaque élément d'une liste de 0 à 10, mais seulement si l'élément est supérieur ou égal à 3. 🚩
     - définir la liste des nombres flottants compris entre -1 et 1 avec un décalage de 0.01.
