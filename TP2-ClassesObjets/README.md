@@ -86,6 +86,32 @@ Dans cette partie : 🚩 = commande + résultat
         
         ***Aide*** : on pourra utiliser deux boucles for imbriquées.
 
+<!-- 
+
+**Manipuler des ensembles**
+
+Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affichez les résultats suivants :
+- le test d'appartenance de 8 à l'ensemble A 🚩
+- le test d'appartenance de 3 à l'ensemble B 
+- les ensembles $A - B$ et $B-A$ 
+- l'ensemble $A \cup B$ (l'union) 🚩
+- l'ensemble $A \cap B$ (l'intersection) 🚩
+- le test d'inclusion du sous-ensemble $\{8, 10\}$ dans l'ensemble A -->
+
+
+***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
+
+## Partie III : Créer des fonctions et des modules 
+45min
+
+1. Ecrire un programme qui lit un nombre et affiche "+", "0", "-" selon que le nombre est positif, nul ou négatif.
+1. Ecrire un programme qui calcule et affiche les carrés des 10 premiers entiers :
+    - d'abord avec une boucle **while**
+    - puis en utilisant une boucle **for**
+1. Ecrire une fonction `sum` qui calcule la somme des éléments d’une liste.
+1. Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
+1. Ecrire un programme qui affiche la table de multiplications (de 1 à 10).
+
 
 **Manipuler des dictionnaires**
 
@@ -109,33 +135,6 @@ Dans cette partie : 🚩 = commande + résultat
     - Fusionner les deux précédents dictionnaires de deux manière différentes:
         - 1ère méthode : utiliser l'opérateur union `d1 | d2`
         - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`. 
-
-
-**Manipuler des ensembles**
-
-Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affichez les résultats suivants :
-- le test d'appartenance de 8 à l'ensemble A 🚩
-- le test d'appartenance de 3 à l'ensemble B 
-- les ensembles $A - B$ et $B-A$ 
-- l'ensemble $A \cup B$ (l'union) 🚩
-- l'ensemble $A \cap B$ (l'intersection) 🚩
-- le test d'inclusion du sous-ensemble $\{8, 10\}$ dans l'ensemble A
-
-
-***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
-
-## Partie III : Créer des fonctions et des modules 
-45min
-
-1. Ecrire un programme qui lit un nombre et affiche '+', '0', '-' selon que le nombre est positif, nul ou négatif.
-1. Ecrire un programme qui lit trois valeurs entières (a, b et c) au clavier et qui affiche la plus grande des trois valeurs.
-1. Ecrire un programme qui affiche une table de multiplication.
-1. Ecrire un programme qui calcule et affiche les carrés des n premiers entiers :
-    - d'abord avec une boucle **while**
-    - puis en utilisant une boucle **for**
-1. Ecrire une fonction `sum` qui calcule la somme des éléments d’une liste.
-1. Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
-
 
 ## Déjà terminé ?
 
