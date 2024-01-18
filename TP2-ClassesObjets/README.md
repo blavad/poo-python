@@ -124,10 +124,17 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 
 ***Aide*** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` 
 
-<!-- ## Partie III : Créer des fonctions et des modules 
+## Partie III : Créer des fonctions et des modules 
 45min
 
-1.  -->
+1. Ecrire un programme qui lit un nombre et affiche '+', '0', '-' selon que le nombre est positif, nul ou négatif.
+1. Ecrire un programme qui lit trois valeurs entières (a, b et c) au clavier et qui affiche la plus grande des trois valeurs.
+1. Ecrire un programme qui affiche une table de multiplication.
+1. Ecrire un programme qui calcule et affiche les carrés des n premiers entiers :
+    - d'abord avec une boucle **while**
+    - puis en utilisant une boucle **for**
+1. Ecrire une fonction `sum` qui calcule la somme des éléments d’une liste.
+1. Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
 
 
 ## Déjà terminé ?
