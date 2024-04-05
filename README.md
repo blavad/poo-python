@@ -13,6 +13,15 @@ Pour bien apprendre pendant ces travaux pratiques il est conseillé d'avoir les 
 - un éditeur de texte. Il existe des environnements de développements très performants que vous serez amené à utiliser en entreprise. Pourquoi ne pas les utiliser dès à présent ?
     - `Visual Studio Code`, `PyCharm`, `SublimeText`, ...
 
-## Et ensuite ?
+> Si votre environnement de travail est près. Vous pouvez lire [le TP n°1 sur les bases du langage de programmation python](./TP1-Fondamentaux/README.md).
 
-Si votre environnement de travail est près. Vous pouvez lire [le TP n°1 sur les bases du langage de programmation python](./TP1-Fondamentaux/README.md).
+
+## Auteur
+
+Ce cours a été réalisé par David Albert, @blavad
+
+## Mentions
+
+Si vous souhaitez réutiliser ces supports, veuillez inclure la mention d'attribution suivante de façon claire et visible.
+
+> Ce support utilise _POO en python_, développé par David Albert @blavad, disponible à https://github.com/blavad/poo-python.
