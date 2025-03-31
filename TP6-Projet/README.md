@@ -93,4 +93,4 @@ L'objectif du projet est de développer un logiciel d'analyse de données de NBA
 - ajouter un nouveau joueur à l'équipe
 - ...
 
-Le logiciel pourra utiliser les données provenant d'une API dédiée : https://rapidapi.com/theapiguy/api/free-nba/ 
+Le logiciel pourra utiliser les données provenant d'une API dédiée : https://rapidapi.com/theapiguy/api/free-nba/
