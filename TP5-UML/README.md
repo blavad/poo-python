@@ -51,16 +51,18 @@ Voici la description d'un système de commerce électronique :
 
 30min
 
-L'école GEMA a besoin de connaître les moyennes pour ses 3 filières (IASchool, CyberManagement et ...) pour toutes les matières et pour tous les étudiants.
+Une école a besoin de connaître les moyennes pour ses 3 filières (IAS, CMS et ESI) pour toutes les matières et pour tous les étudiants.
 
 On suppose que les filières ont le même nombre de matières.
 
 1. Identifier les classes et décrire le diagramme de classe
-2. Etablir un scénario (=diagramme de séquences) pour effectuer la moyenne de GEMA
+2. Etablir un scénario (= diagramme de séquence) pour effectuer la moyenne de l'école
 
-## Partie IV : Donner le diagramme de classes correspondant au TP 3
+## Partie IV :
 
 30min
+
+Donner le diagramme de classes correspondant au TP 3
 
 <!--
 

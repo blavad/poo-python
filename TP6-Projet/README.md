@@ -2,8 +2,8 @@
 
 ## Informations générales
 
-- Date de validation du sujet : 24 novembre
-- Date de rendu : 22 décembre
+- Date de validation du sujet : 11 avril
+- Date de rendu : 25 avril
 
 ## Choix du sujet
 
