@@ -58,9 +58,9 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
 
    A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ?
 
-## Partie II : Instancier et manipuler des objets usuels
+## Partie II : Manipuler des objets usuels
 
-1h00
+2h00
 
 <!-- Dans cette partie : 🚩 = commande + résultat -->
 
@@ -91,46 +91,34 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    - créer la liste `['pt', 'ph', 'py', 'ot', 'oh', 'oy']` à partir des chaînes `'po'` et `'thy'`.
      **_Aide_** : on pourra utiliser deux boucles for imbriquées.
 
-## Partie III : Créer des fonctions et des modules
-
-45min
-
-1. Ecrire un programme qui demande à l'utilisateur de rentrer un nombre et affiche "+", "0", "-" selon que le nombre est positif, nul ou négatif.
-1. Ecrire un programme qui calcule et affiche les carrés des 10 premiers entiers :
-   - d'abord avec une boucle **while**
-   - puis en utilisant une boucle **for**
-1. Ecrire une fonction `sum` qui calcule la somme des éléments d’une liste.
-1. Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
-1. Ecrire un programme qui affiche la table de multiplications (de 1 à 10).
-
-## Partie IV : Ensembles et dictionnaires
-
-45min
+</br>
 
 **Manipuler des dictionnaires**
 
-1. Définir les dictionnaires suivants `shape1 = {'shape': 'circle', 'position': {'x': 10, 'y': 10}, 'radius': 4}`, puis effectuer les actions suivantes:
+Définir les dictionnaires suivants `shape1 = {'shape': 'circle', 'position': {'x': 10, 'y': 10}, 'radius': 4}`, puis effectuer les actions suivantes:
 
-   - afficher toutes les clés du dictionnaire
-   - vérifier que `'position'` est une clé du dictionnaire
-   - vérifier que `'circle'` est une valeur du dictionnaire
-   - supprimer la donnée associée dont la clé est `'radius'`
-   - modifier la valeur de la clé `'shape'` en `'square'`
-   - ajouter le couple clé='side' et valeur=4 au dictionnaire
+- afficher toutes les clés du dictionnaire
+- vérifier que `'position'` est une clé du dictionnaire
+- vérifier que `'circle'` est une valeur du dictionnaire
+- supprimer la donnée associée dont la clé est `'radius'`
+- modifier la valeur de la clé `'shape'` en `'square'`
+- ajouter le couple clé='side' et valeur=4 au dictionnaire
 
-1. Utiliser un dictionnaire en compréhension pour:
+Utiliser un dictionnaire en compréhension pour:
 
-   - créer un dictionnaire `dict_pow` dont les clés sont les entiers allant de -5 à 5 et les valeurs sont ces même entiers mis au carré.
+- créer un dictionnaire `dict_pow` dont les clés sont les entiers allant de -5 à 5 et les valeurs sont ces même entiers mis au carré.
 
-     **Note :** donner de façon explicite le type de ce dernier
+  **Note :** donner de façon explicite le type de ce dernier
 
-   - soit la liste `['POO', 'Python', 'Travaux Pratiques']`. Créer un dictionnaire `dict_len` dont les clés sont ces chaînes de caractères et les valeurs sont le nombre de lettres dans chacune de ces chaînes.
+- soit la liste `['POO', 'Python', 'Travaux Pratiques']`. Créer un dictionnaire `dict_len` dont les clés sont ces chaînes de caractères et les valeurs sont le nombre de lettres dans chacune de ces chaînes.
 
-     **Note :** donner de façon explicite le type de ce dernier
+  **Note :** donner de façon explicite le type de ce dernier
 
-   - Fusionner les deux précédents dictionnaires de deux manière différentes:
-     - 1ère méthode : utiliser l'opérateur union `d1 | d2`
-     - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`.
+- Fusionner les deux précédents dictionnaires de deux manière différentes:
+  - 1ère méthode : utiliser l'opérateur union `d1 | d2`
+  - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`.
+
+</br>
 
 **Manipuler des ensembles**
 
