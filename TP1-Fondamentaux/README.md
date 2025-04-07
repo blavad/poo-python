@@ -82,7 +82,7 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 
 1. _(Optionnel)_ Dans `tp1`, créer le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
 
-## Partie II : Gestionnaire de paquets et environnements virtuels
+## Partie III : Gestionnaire de paquets et environnements virtuels
 
 30min
 
