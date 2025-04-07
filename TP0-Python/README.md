@@ -28,12 +28,13 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 
 1.  Ecrire un programme qui lit 2 entiers a et b et affiche les entiers divisibles par 7 entre a et b.
 
+1.  Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
+
+1.  Ecrire un programme qui affiche la table de multiplications (de 1 à 10).
+
 1.  Ecrire un programme qui lit des caractères et s’arrête à la lecture d’un '.'. Ce programme compte et affiche le nombre de caractères lus, le nombre de lettres minuscules ainsi que le nombre de chiffres.
 
     Modifier le programme pour n’autoriser la saisie que de maximum 50 caractères.
-
-1.  Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
-1.  Ecrire un programme qui affiche la table de multiplications (de 1 à 10).
 
 ## Partie III : Chaînes de caractères
 
