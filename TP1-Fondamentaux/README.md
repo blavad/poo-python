@@ -105,6 +105,9 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 1. Sortir de l'environnement virtuel `.venv` et en créer un second nommé `.tp1-env`.
 2. Dans ce second environnement virtuel, installer tous les requirements du fichier `requirements.txt` en une ligne. Indiquer la commande utilisé dans le compte-rendu.
 3. Installer également votre package `tp1`.
+
+   Dans le dossier `tp1/` où se situe le fichier `setup.py`, exécuter `pip install .`
+
 4. Vérifier son installaton en exécutant le fichier `tests/test-tp1-install.py`
 
 ## Déjà terminé ?
