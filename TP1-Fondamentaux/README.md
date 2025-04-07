@@ -82,27 +82,27 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `__m
 
 1. _(Optionnel)_ Dans `tp1`, créer le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
 
-## Partie III : Gestionnaire de paquets
+## Partie II : Gestionnaire de paquets et environnements virtuels
 
 30min
 
 **Environnement virtuel**
 
-1. Revener dans le dossier `TP1-Fondamentaux`
-1. Créer un environnement virtuel python avec le nom `.env`.
-1. Analyser le contenu du dossier `.env`. Que contient-il ?
+<!-- 1. Créer un dossier `TP1-Python` et ouvrir un terminal à cet emplacement -->
+
+1. Créer un environnement virtuel python avec le nom `.venv`.
+1. Analyser le contenu du dossier `.venv`. Que contient-il ?
 1. Activer cet environnement virtuel.
 1. Afficher la liste des paquets installés dans l'environnement virtuel.
-1. Comparer à la liste des paquets python installés sur votre machine.
-1. Installer les paquets nécessaires au bon fonctionnement du module `tp1` (numpy).
-
-   > On pourra valider que la commande `python -m tp1.tp1` s'exécute bien.
-
+1. Comparer à la liste des paquets python installés sur votre machine
+1. Installer les paquets `numpy` et `plotly`.
+1. Afficher de nouveau la liste des paquets installés dans l'environnement virtuel.
 1. Créer le fichier `requirements.txt` qui contient les dépendances de notre package.
+1. Quelle commande devra être lancée par un autre développeur qui souhaiterait installer les dépendances du `requirements.txt`.
 
 **Installer et utiliser notre module**
 
-1. Sortir de l'environnement virtuel `.env` et en créer un second nommé `.tp1-env`.
+1. Sortir de l'environnement virtuel `.venv` et en créer un second nommé `.tp1-env`.
 2. Dans ce second environnement virtuel, installer tous les requirements du fichier `requirements.txt` en une ligne. Indiquer la commande utilisé dans le compte-rendu.
 3. Installer également votre package `tp1`.
 4. Vérifier son installaton en exécutant le fichier `tests/test-tp1-install.py`
