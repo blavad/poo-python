@@ -57,4 +57,4 @@ Pour chacune des fonctions ci-dessous, implémentez la fonction dans le fichier 
 
 ## Déjà terminé ?
 
-Vous pouvez dès à présent commencer [le TP n°1](../TP1-Fondamentaux/README.md).
+Vous pouvez dès à présent commencer [le TP n°1 sur les outils Python](../TP1-Python&Outils/README.md).
