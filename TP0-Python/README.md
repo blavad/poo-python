@@ -19,18 +19,16 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 
 1.  Ecrire un programme qui lit un entier n, puis lit n nombres réels et affiche le plus grand de ces réels.
 
-1.  Ecrire un programme qui affiche une table de multiplication avec deux boucles `for` imbriquées.
+1.  Ecrire un programme qui affiche une table de multiplication (de 1 à 10) avec deux boucles `for` imbriquées.
 
 1.  Ecrire un programme qui calcule et affiche les carrés des 10 premiers entiers :
 
-    - d'abord avec une boucle **while**
-    - puis en utilisant une boucle **for**
+    - d'abord avec une boucle **for**
+    - puis en utilisant une boucle **while**
 
 1.  Ecrire un programme qui lit 2 entiers a et b et affiche les entiers divisibles par 7 entre a et b.
 
 1.  Ecrire une fonction `moyenne` qui calcule la moyenne des éléments d’une liste.
-
-1.  Ecrire un programme qui affiche la table de multiplications (de 1 à 10).
 
 1.  Ecrire un programme qui lit des caractères et s’arrête à la lecture d’un '.'. Ce programme compte et affiche le nombre de caractères lus, le nombre de lettres minuscules ainsi que le nombre de chiffres.
 
