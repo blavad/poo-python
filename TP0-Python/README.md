@@ -62,8 +62,17 @@ Pour chacune des fonctions ci-dessous, implémentez la fonction dans le fichier 
    1. 1 + 2 + 3 + .... + 100
    1. 1 + 3 + 5 + .... + 99
 1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque valeur de la liste puis affiche la liste modifiée
-1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre de fois où la lettre `'a'` apparaît
+1. Ecrire un programme qui compte et affiche le nombre de fois où la lettre `'a'` apparaît dans le texte ci-dessous :
+
+   ```
+   Python (prononcé /pi.tɔ̃/) est un langage de programmation interprété, multiparadigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
+   ```
+
+   Modifier ce programme pour qu'il demande à l'utilisateur la chaîne de caractères qu'il veut analyser (à la place du texte).
+
 1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre voyelles présentes dans la chaîne
+
+   Réorganiser ce programme pour qu'il définisse et utilise une fonction que l'on nommera `compterVoyelles` et qui prend une chaîne de caractères en paramètre et renvoie le nombre de voyelles présentes dans cette chaîne.
 
 ## Déjà terminé ?
 
