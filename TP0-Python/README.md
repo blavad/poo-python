@@ -53,6 +53,13 @@ Pour chacune des fonctions ci-dessous, implémentez la fonction dans le fichier 
 3.  Définissez une fonction `compterVoyelles` qui prend une chaîne de caractères en paramètre et renvoie le nombre de voyelles présentes dans la chaîne.
 4.  Écrire une fonction `intersectionTableaux` qui prend deux tableaux d'entiers en paramètres et renvoie un nouveau tableau contenant les éléments communs aux deux tableaux.
 
+## Partie IV : Plus d'exercices
+
+1. Ecrire un programme qui demande à l'utilisateur de rentrer un nombre et affiche le résultat de la multiplication de ce nombre par 5
+1. Utiliser une boucle pour afficher 8 fois le mot `"boucle"`
+1. Ecrire un programme qui initialise la liste `l = ["John", 10, 790, "Hello"]` puis itère sur ses éléments pour les afficher
+1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque
+
 ## Déjà terminé ?
 
 Vous pouvez dès à présent commencer [le TP n°1 sur les outils Python](../TP1-Python&Outils/README.md).
