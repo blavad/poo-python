@@ -93,8 +93,8 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1h00
 
-1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous.
-
+<!-- 1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous. -->
+<!--
    Exemple de définition d'une classe générique en python.
 
    ```python
@@ -127,17 +127,17 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
    loggerList.log() # name=example2 value=[1, 2]
    loggerList.set([4, 6, 8, 10, 12])
    loggerList.log() # name=example2 value=[4, 6, 8, 10, 12]
-   ```
+   ``` -->
 
-1. Changer les classes `LIFO` et `FIFO` en conséquence.
+<!-- 1. Changer les classes `LIFO` et `FIFO` en conséquence. -->
 
-1. Dans un fichier `test_pile.py`, créer une fonction `test_pile` qui prend en argument une pile quelconque d'entiers (c.à.d une pile qui vérifie l'interface `IPile[int]`) et qui réalise les opérations suivantes:
+<!-- 1. Dans un fichier `test_pile.py`, créer une fonction `test_pile` qui prend en argument une pile quelconque d'entiers (c.à.d une pile qui vérifie l'interface `IPile[int]`) et qui réalise les opérations suivantes:
 
    - affiche la pile, empile 5; affiche la pile; empile 8; affiche la pile; dépile; affiche la pile; dépile;
 
-   **_Note :_** On veillera à bien déclarer les types de retour et des arguments de la fonction.
+   **_Note :_** On veillera à bien déclarer les types de retour et des arguments de la fonction. -->
 
-1. Créer dans ce même fichier un programme principal exécutant cette fonction sur une pile FIFO vide, sur une FIFO initialisée avec le liste `[1, 2, 3]` et sur une pile LIFO vide. Tester ce programme.
+<!-- 1. Créer dans ce même fichier un programme principal exécutant cette fonction sur une pile FIFO vide, sur une FIFO initialisée avec le liste `[1, 2, 3]` et sur une pile LIFO vide. Tester ce programme. -->
 
 1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
 
