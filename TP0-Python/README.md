@@ -60,8 +60,10 @@ Pour chacune des fonctions ci-dessous, implémentez la fonction dans le fichier 
 1. Ecrire un programme qui initialise la liste `l = ["John", 10, 790, "Hello"]` puis itère sur ses éléments pour les afficher
 1. Ecrire un programme pour calculer
    1. 1 + 2 + 3 + .... + 100
-   2. 1 + 3 + 5 + .... + 99
-1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque valeur de la liste puis afficher la liste
+   1. 1 + 3 + 5 + .... + 99
+1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque valeur de la liste puis affiche la liste modifiée
+1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre de fois où la lettre `'a'` apparaît
+1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre voyelles présentes dans la chaîne
 
 ## Déjà terminé ?
 
