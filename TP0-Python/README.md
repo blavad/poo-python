@@ -58,7 +58,10 @@ Pour chacune des fonctions ci-dessous, implémentez la fonction dans le fichier 
 1. Ecrire un programme qui demande à l'utilisateur de rentrer un nombre et affiche le résultat de la multiplication de ce nombre par 5
 1. Utiliser une boucle pour afficher 8 fois le mot `"boucle"`
 1. Ecrire un programme qui initialise la liste `l = ["John", 10, 790, "Hello"]` puis itère sur ses éléments pour les afficher
-1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque
+1. Ecrire un programme pour calculer
+   1. 1 + 2 + 3 + .... + 100
+   2. 1 + 3 + 5 + .... + 99
+1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque valeur de la liste puis afficher la liste
 
 ## Déjà terminé ?
 
