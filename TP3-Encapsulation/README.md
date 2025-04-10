@@ -55,8 +55,7 @@ print(isinstance(pokemon, PokemonEau)) # False
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 
 - le nom des variables est clair et explicite
-- un fichier différent par classe et programme principal
-- les types sont définis de manière explicite (normes PEP 483)
+- un fichier différent par classe et un programme principal
 - la nomenclature python des attributs public, protégés et privés est respectée
 
 **Les piles**
@@ -70,7 +69,19 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_lifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-1. De la même manière, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `FIFO` dans un fichier `fifo.py` et définir trois fonctions :
+## Partie III : Interfaces de programmation
+
+15min
+
+1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`.
+
+2. Faire hériter la classe `LIFO` de `IPile`.
+
+3. Selon vous, à quoi peut service la création d'interfaces ?
+
+## Partie IV : FIFO
+
+1. De la même manière que dans la partie II, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `FIFO` dans un fichier `fifo.py`. Celle-ci héritera de l'interface `IPile` et définira les quatre méthodes :
 
    - `__init__` : qui construit une pile à partir d’une liste variable d’éléments passés en paramètres
    - `empile` : empile un élément en haut de la pile
@@ -79,65 +90,9 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-## Partie III : Interfaces de programmation
-
-15min
-
-1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`.
-
-1. Faire hériter les classes `LIFO` et `FIFO` de `IPile`.
-
-1. Selon vous, à quoi peut service la création d'interfaces ?
-
-## Partie IV : Généricité et héritage
+## (Bonus) Partie IV : Généricité et héritage
 
 1h00
-
-<!-- 1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous. -->
-<!--
-   Exemple de définition d'une classe générique en python.
-
-   ```python
-   from typing import TypeVar, Generic
-
-   T = TypeVar('T')
-
-   class LogGeneric(Generic[T]):
-       def __init__(self, name: str, value: T) -> None:
-           self._name = name
-           self._value = value
-
-       def set(self, new: T) -> None:
-           self._value = new
-
-       def get(self) -> T:
-           return self._value
-
-       def log(self) -> None:
-           print(f"name={self._name} value={self._value}")
-   ```
-
-   Exemple d'utilisation d'une classe générique en python.
-
-   ```python
-   loggerFloat : LogGeneric[float] = LogGeneric("example1", 3.25)
-   loggerList.log() # name=example1 value=3.25
-
-   loggerList : LogGeneric[list] = LogGeneric("example2", [1, 2])
-   loggerList.log() # name=example2 value=[1, 2]
-   loggerList.set([4, 6, 8, 10, 12])
-   loggerList.log() # name=example2 value=[4, 6, 8, 10, 12]
-   ``` -->
-
-<!-- 1. Changer les classes `LIFO` et `FIFO` en conséquence. -->
-
-<!-- 1. Dans un fichier `test_pile.py`, créer une fonction `test_pile` qui prend en argument une pile quelconque d'entiers (c.à.d une pile qui vérifie l'interface `IPile[int]`) et qui réalise les opérations suivantes:
-
-   - affiche la pile, empile 5; affiche la pile; empile 8; affiche la pile; dépile; affiche la pile; dépile;
-
-   **_Note :_** On veillera à bien déclarer les types de retour et des arguments de la fonction. -->
-
-<!-- 1. Créer dans ce même fichier un programme principal exécutant cette fonction sur une pile FIFO vide, sur une FIFO initialisée avec le liste `[1, 2, 3]` et sur une pile LIFO vide. Tester ce programme. -->
 
 1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
 
@@ -148,7 +103,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
    De quoi hérite cette classe ? Déclarer cette héritage dans votre code.
 
-1. Dans le programme principal du fichier `test_pile.py`
+2. Dans le programme principal du fichier `test_pile.py`
 
    - créer une pile multiple constituée de deux piles FIFO et d'une pile LIFO
    - créer une pile multiple constituée d'une pile LIFO et de la pile multiple précédente
