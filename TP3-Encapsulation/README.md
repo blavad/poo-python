@@ -56,8 +56,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 - le nom des variables est clair et explicite
 - un fichier différent par classe et programme principal
-- les types sont définis de manière explicite (normes PEP 483)
-- la nomenclature python des attributs public, protégés et privés est respectée
+- la nomenclature python des méthodes et attributs publics et privés est respectée
 
 **Les piles**
 

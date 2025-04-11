@@ -18,8 +18,30 @@ Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences t
 2. Quelle est sa version par défaut ?
    - S'il s'agit de la version 2, vérifier que `python3` est également installé
    - Nous n'utiliserons **désormais plus que la version 3**
-3. Lancer l'interpréteur en mode interactif pour calculer $3.5^{12}$.
-4. Fermer l'interpréteur en mode interactif.
+3. Lancer l'interpréteur en mode interactif
+4. Exécuter la suite d'instructions
+
+   ```python
+   # Déclarer une variable
+   phrase = "Introduction à la programmation orientée objet"
+
+   # Calculer la longueur d'une variable
+   longueur = len(phrase)
+
+   # Afficher la longueur
+   print(longueur)
+
+   # Compter le nombre de 'o'
+   count_o = phrase.count('o')
+
+   # Afficher le nombre de 'o'
+   print(longueur)
+
+   # Afficher le résultat d'un calcul compliqué
+   print(3.5**24)
+   ```
+
+5. Fermer l'interpréteur en mode interactif.
 
 ## Partie II : Gestionnaire de paquets et environnements virtuels
 
