@@ -15,13 +15,13 @@ Dans ce TP, on s'intéresse à l'utilisation d'objets usuels python. Les compét
 **Manipuler nos premiers objets**
 
 1. Commencer par regarder cette [vidéo sur les notions de variables, objets et typage dynamique en python](https://www.youtube.com/watch?v=vSsTKNCSKnU).
-1. Lancer un notebook Python
+2. Lancer un notebook Python pour exécuter la suite du code
 
 Dans les versions récentes de python, tout est objet. En effet, les types intégrés à python héritent tous de la même classe parente `object`. C'est le cas notamment de `bool`, `int`, `float`, `str`, `list`, `dict`, `set`, etc.
 
 3. Exécuter les instructions suivantes:
 
-   Instancier la classe list:
+   Instancier un objet de la classe list:
 
    ```python
    notes = list()
@@ -30,13 +30,13 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    Afficher son type:
 
    ```python
-   print(type(obj))
+   print(type(notes))
    ```
 
    Afficher ses attributs et méthodes:
 
    ```python
-   print(dir(obj))
+   print(dir(notes))
    ```
 
    **_Note :_** On distingue les méthodes built-in des autres par leur notation particulière `__method__`
@@ -52,9 +52,9 @@ Dans les versions récentes de python, tout est objet. En effet, les types inté
    print(str(obj))
    ```
 
-   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__`, `__repr__`, `__sizeof__`, `__getattribute__` et `__hash__` ?
+   A quoi servent les méthodes `__eq__`, `__dir__`, `__ge__`, `__str__` ? Ces méthodes sont communes à tous les objets python.
 
-1. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
+4. Réaliser les mêmes opérations appliquées à une chaîne de caracètes.
 
    A quoi servents les méthodes `upper`, `lower`, `find`, `split` et `join` ?
 
@@ -114,13 +114,13 @@ Utiliser un dictionnaire en compréhension pour:
 
   **Note :** donner de façon explicite le type de ce dernier
 
-- Fusionner les deux précédents dictionnaires de deux manière différentes:
+<!-- - Fusionner les deux précédents dictionnaires de deux manière différentes:
   - 1ère méthode : utiliser l'opérateur union `d1 | d2`
-  - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`.
+  - 2ème méthode : mettre à plat le contenu des dictionnaires existants dans un dictionnaire en cours de construction grâce à l'opérateur de mise à plat `**d`. -->
 
 </br>
 
-**Manipuler des ensembles**
+<!-- **Manipuler des ensembles**
 
 Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affichez les résultats suivants :
 
@@ -131,7 +131,7 @@ Définir deux ensembles $A = \{3, 7, 8, 10\}$ et $B = \{2, 7, 10\}$, puis affich
 - l'ensemble $A \cap B$ (l'intersection)
 - le test d'inclusion du sous-ensemble $\{8, 10\}$ dans l'ensemble A
 
-**_Aide_** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__`
+**_Aide_** : on pourra afficher toutes les méthodes de la classe `set` grâce à la méthode built-in `__dir__` -->
 
 ## Déjà terminé ?
 
