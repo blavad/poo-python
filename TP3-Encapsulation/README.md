@@ -77,7 +77,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 2. Faire hériter la classe `LIFO` de `IPile`.
 
-3. Selon vous, à quoi peut service la création d'interfaces ?
+3. Selon vous, à quoi peut servir la création d'interfaces ?
 
 ## Partie IV : FIFO
 
@@ -89,26 +89,6 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
    - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"FIFO([0, 5, 12])"`)
 
 1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
-
-## (Bonus) Partie IV : Héritage
-
-1h00
-
-1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
-
-   - `__init__` : qui construit une pile à partir d’une liste variable de piles passées en paramètres
-   - `empile` : empile un entier dans chacune des sous-piles
-   - `depile` : dépile un entier dans chacune des sous-piles
-   - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"PileMultiple([ LIFO([0, 5, 12]), FIFO([1, 2, 3]) ])"`)
-
-   De quoi hérite cette classe ? Déclarer cette héritage dans votre code.
-
-2. Dans le programme principal du fichier `test_pile.py`
-
-   - créer une pile multiple constituée de deux piles FIFO et d'une pile LIFO
-   - créer une pile multiple constituée d'une pile LIFO et de la pile multiple précédente
-
-   Appliquer la fonction `test_pile` à ces deux piles multiples. Tester ce programme et vérifier que le résultat est cohérent.
 
 ## Déjà terminé ?
 
