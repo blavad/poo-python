@@ -10,7 +10,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences t
 
 ## Partie I : Interpréteur Python
 
-15min
+20min
 
 **Pour commencer**
 
@@ -43,24 +43,7 @@ Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences t
 
 5. Fermer l'interpréteur en mode interactif.
 
-## Partie II : Gestionnaire de paquets et environnements virtuels
-
-30min
-
-**Environnement virtuel**
-
-1. Créer un dossier `TP1-Python` et ouvrir un terminal à cet emplacement
-1. Créer un environnement virtuel python avec le nom `.venv`.
-1. Analyser le contenu du dossier `.venv`. Que contient-il ?
-1. Activer cet environnement virtuel.
-1. Afficher la liste des paquets installés dans l'environnement virtuel.
-1. Comparer à la liste des paquets python installés sur votre machine
-1. Installer les paquets `numpy` et `plotly`.
-1. Afficher de nouveau la liste des paquets installés dans l'environnement virtuel.
-1. Créer le fichier `requirements.txt` qui contient les dépendances de notre package.
-1. Quelle commande devra être lancée par un autre développeur qui souhaiterait installer les dépendances du `requirements.txt`.
-
-## Partie III : Modules et packages
+## Partie II : Modules et packages
 
 1h00
 
@@ -82,7 +65,7 @@ Un package est simplement un répertoire contenant un ou plusieurs modules et un
 
 **Premiers modules**
 
-1. Le dossier `TP1-Python` est notre dossier de travail.
+1. Créer un dossier `TP1-Python` (ce dossier est notre espace de travail).
 2. Dans le dossier `TP1-Python`, créer un fichier `main.py` avec le contenu:
    ```python
     print("> ------------------------------")
@@ -127,6 +110,23 @@ On souhaite désormais utiliser la fonction `addition` dans notre programme `mai
 
     - $aire = \pi r^2$
     - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
+
+## (Bonus) Partie III : Gestionnaire de paquets et environnements virtuels
+
+30min
+
+**Environnement virtuel**
+
+1. Ouvrir un terminal à l'emplacement `TP1-Python`
+2. Créer un environnement virtuel python avec le nom `.venv`.
+3. Analyser le contenu du dossier `.venv`. Que contient-il ?
+4. Activer cet environnement virtuel.
+5. Afficher la liste des paquets installés dans l'environnement virtuel.
+6. Comparer à la liste des paquets python installés sur votre machine
+7. Installer les paquets `numpy` et `plotly`.
+8. Afficher de nouveau la liste des paquets installés dans l'environnement virtuel.
+9. Créer le fichier `requirements.txt` qui contient les dépendances de notre package.
+10. Quelle commande devra être lancée par un autre développeur qui souhaiterait installer les dépendances du `requirements.txt`.
 
 ## Déjà terminé ?
 

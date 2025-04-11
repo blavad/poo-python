@@ -5,7 +5,7 @@ Dans ce TP, on s'intéresse à l'utilisation d'objets usuels python. Les compét
 - Comprendre le typage dynamique
 - Manipuler des listes en python
 - Manipuler des ensembles en python
-- Manipuler des disctionnaires en python
+- Manipuler des dictionnaires en python
 - Instancier des objets
 
 ## Partie I : Comprendre la notion d'objet et de typage dynamique en python
@@ -15,16 +15,16 @@ Dans ce TP, on s'intéresse à l'utilisation d'objets usuels python. Les compét
 **Manipuler nos premiers objets**
 
 1. Commencer par regarder cette [vidéo sur les notions de variables, objets et typage dynamique en python](https://www.youtube.com/watch?v=vSsTKNCSKnU).
-1. Lancer l'interpréteur python en mode interactif
+1. Lancer un notebook Python
 
 Dans les versions récentes de python, tout est objet. En effet, les types intégrés à python héritent tous de la même classe parente `object`. C'est le cas notamment de `bool`, `int`, `float`, `str`, `list`, `dict`, `set`, etc.
 
 3. Exécuter les instructions suivantes:
 
-   Instancier la classe objet:
+   Instancier la classe list:
 
    ```python
-   obj = object()
+   notes = list()
    ```
 
    Afficher son type:
