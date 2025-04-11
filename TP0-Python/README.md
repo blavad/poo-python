@@ -22,8 +22,17 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 1. Utiliser une boucle pour afficher 8 fois le mot `"boucle"`
 1. Ecrire un programme qui initialise la liste `l = ["John", 10, 790, "Hello"]` puis itère sur ses éléments pour les afficher
 1. Ecrire un programme pour calculer
+
    1. 1 + 2 + 3 + .... + 100
    1. 1 + 3 + 5 + .... + 99
+
+1. Ecrire un programme qui affiche une table de multiplication (de 1 à 10) avec deux boucles `for` imbriquées.
+
+1. Ecrire un programme qui calcule et affiche les carrés des 10 premiers entiers :
+
+   - d'abord avec une boucle **for**
+   - puis en utilisant une boucle **while**
+
 1. Ecrire un programme qui initialise la liste `l2 = [1, 3, 4, 5]` puis itère sur ses éléments pour ajouter 5 à chaque valeur de la liste puis affiche la liste modifiée
 1. Ecrire un programme qui compte et affiche le nombre de fois où la lettre `'a'` apparaît dans le texte ci-dessous :
 
@@ -33,18 +42,9 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 
    Modifier ce programme pour qu'il demande à l'utilisateur la chaîne de caractères qu'il veut analyser (à la place du texte).
 
-1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre voyelles présentes dans la chaîne
+1. Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et affiche le nombre de voyelles présentes dans la chaîne.
 
    Réorganiser ce programme pour qu'il définisse et utilise une fonction que l'on nommera `compterVoyelles` et qui prend une chaîne de caractères en paramètre et renvoie le nombre de voyelles présentes dans cette chaîne.
-
-1. Ecrire un programme qui lit un entier n, puis lit n nombres réels et affiche le plus grand de ces réels.
-
-1. Ecrire un programme qui affiche une table de multiplication (de 1 à 10) avec deux boucles `for` imbriquées.
-
-1. Ecrire un programme qui calcule et affiche les carrés des 10 premiers entiers :
-
-   - d'abord avec une boucle **for**
-   - puis en utilisant une boucle **while**
 
 1. Ecrire un programme qui lit 2 entiers a et b et affiche les entiers divisibles par 7 entre a et b.
 
