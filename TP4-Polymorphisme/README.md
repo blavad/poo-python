@@ -74,7 +74,6 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
    - Une classe = un fichier.
    - Les constructeurs sont correctement implémentés.
-   - Les attributs sont tous privés ou protégés.
    - Le programme lève une exception lorsque la couleur est invalide
 
      ```python
