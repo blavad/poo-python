@@ -3,10 +3,10 @@
 Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences travaillées durant cette activité sont les suivantes :
 
 - Comprendre et utiliser l'interpréteur python
-- Utiliser un environnement virtuel python
-- Créer un package et des modules python
 - Lancer et utiliser l'interpréteur interactif
+- Utiliser un environnement virtuel python
 - Comprendre et utiliser le gestionnaire de paquets `pip`
+- Créer un package et des modules python
 
 ## Partie I : Interpréteur Python
 
@@ -64,22 +64,35 @@ Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences t
 
 1h00
 
+**Définitions**
+
+Voici les définitions de module et de package.
+
+<i>Définition 1 : Module</i>
+
+```
+En Python, un module est un fichier contenant des définitions de fonctions, de classes et de variables, ainsi que des instructions exécutables. En d'autres termes, c'est une manière d'organiser le code de manière logique et cohérente. Le nom du module est dérivé du nom du fichier (sans l'extension .py).
+```
+
+<i>Définition 2 : Package</i>
+
+```
+Un package est simplement un répertoire contenant un ou plusieurs modules et un fichier spécial __init__.py.
+```
+
 **Premiers modules**
 
-1. Le dossier `TP1-Python` est notre **package**
-2. Dans le dossier `TP1-Python` créer un autre dossier nommé `tp1` et naviguer dedans (ce dossier contient le code source de notre package)
-3. Dans le dossier `TP1-Python/tp1` créer le fichier `main.py` avec le contenu:
+1. Le dossier `TP1-Python` est notre dossier de travail.
+2. Dans le dossier `TP1-Python`, créer un fichier `main.py` avec le contenu:
    ```python
     print("> ------------------------------")
     print("> Module main")
     print("> ------------------------------")
    ```
-4. Exécuter ce fichier en utilisant l'interpréteur. Indiquer la commande utilisée dans le compte-rendu.
-5. Exécuter le module `tp1.main`. Que se passe-t-il ?
-   > on utilisera pour cela la commande `python -m tp1.main`.
-6. Exécuter la commande `python -m tp1`. Que se passe-t-il ?
-7. Renommer le fichier `main.py` en `__main__.py` et réessayer. Conclure.
-8. Dans le dossier `TP1-Python/tp1/math` créer le module `addition.py` avec le contenu:
+3. Exécuter ce fichier en utilisant l'interpréteur.
+4. Exécuter le module `main`. Que se passe-t-il ?
+   > on utilisera pour cela la commande `python -m main`.
+5. Dans le dossier `TP1-Python/math_pkg` (notre package) créer le module `operations` avec le contenu:
 
    ```python
    def addition(a, b):
@@ -88,38 +101,32 @@ Dans ce TP, on s'intéresse aux fondements du langage python. Les compétences t
    print("Hey, 3 + 2 = ", addition(3, 2))
    ```
 
-9. Exécuter ce module. Indiquer la commande utilisée dans le compte-rendu.
+6. Exécuter ce module nommé `math_pkg.operations` d'après son chemin d'accès.
 
 **Plus de modules**
 
-On souhaite désormais utiliser la fonction `addition` dans notre programme `__main__.py`.
+On souhaite désormais utiliser la fonction `addition` dans notre programme `main.py`.
 
-12. Importer la fonction `addition` dans le fichier `__main__.py` et changer la ligne `print("> Module 'main'")` par `print(addition(8,8))`. Qu'observe-t-on ?
+1.  Importer la fonction `addition` dans le fichier `main.py` et changer la ligne `print("> Module 'main'")` par `print(addition(8,8))`. Qu'observe-t-on ?
 
-1. Corriger ce problème.
+2.  Corriger ce problème.
 
-   > 💡 on pourra utiliser la variable build-in `__name__`
+    > 💡 on pourra utiliser la variable build-in `__name__`
 
-1. Dans le dossier `tp1/tp1/math` créer le fichier `__init__.py` avec le contenu:
-   ```python
-   from .addition import addition
-   ```
-   Changer en conséquence l'importation de la fonction `addition` dans `__main__.py`
-   ```python
-   from tp1.math import addition
-   ```
-1. Ajouter une fonction `np_addition` au module `tp1.math`
+3.  Dans le dossier `TP1-Python/math_pkg` créer le fichier `__init__.py` avec le contenu:
+    ```python
+    from .operations import addition
+    ```
+    Changer en conséquence l'importation de la fonction `addition` dans `main.py`
+    ```python
+    from math_pkg import addition
+    ```
+4.  Ajouter une fonction `aire` au module `math_pkg`.
 
-   Cette fonction prend deux listes en entrée, les transforme en array numpy et calcule leur somme.
+    Cette fonction calcule l'aire d'un cercle en fonction de son rayon.
 
-1. (Optionnel) Ajouter une fonction `aire` au module `tp1.math`.
-
-   Cette fonction calcule l'aire d'un cercle en fonction de son rayon.
-
-   - $aire = \pi r^2$
-   - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
-
-1. _(Optionnel)_ Dans `tp1`, créer le module `tp1.argv` qui affiche le nombre et la liste des arguments passés en paramètre.
+    - $aire = \pi r^2$
+    - On utilisera la constante [`pi`](https://docs.python.org/3/library/math.html#math.pi) du paquet [`math`](https://docs.python.org/3/library/math.html#math.pi)
 
 ## Déjà terminé ?
 
