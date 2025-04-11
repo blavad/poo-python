@@ -10,7 +10,7 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 
 ## Partie I : Pokémon
 
-45min
+1h00min
 
 Les Pokémon sont certes de très mignonnes créatures, mais ils sont également un bon exemple pour illustrer l’héritage.
 
@@ -90,7 +90,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-## (Bonus) Partie IV : Généricité et héritage
+## (Bonus) Partie IV : Héritage
 
 1h00
 

@@ -20,29 +20,29 @@ Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cel
         # ypos : int
         # color : Color
 
-        + area() : float
-        + draw() : void
-        + move(deltaX : int, deltaY : int) : void
-        + get_xy(): tuple[int, int]
+        + area() float
+        + draw() void
+        + move(deltaX : int, deltaY : int) void
+        + get_xy() tuple[int, int]
 
         }
 
     class Point {
-            + area() : float
-            + draw() : void
+            + area() float
+            + draw() void
     }
 
     class Circle {
     -radius : int
-    +area() : float
-    +draw() : void
+    +area() float
+    +draw() void
     }
 
     class Rectangle {
     -width : int
     -height : int
-    +area() : float
-    +draw(): void
+    +area()  float
+    +draw() void
     }
 
     Shape2D <|-- Circle
@@ -88,7 +88,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
    - Les méthodes `area`, `move` et `get_xy` sont correctement implémentés.
    - La méthode `draw` lève une exception de type `NotImplementedError` car elle sera implémentée plus tard dans le TP (voir exemple ci-dessous).
 
-   - Les types sont déclarés selon la norme PEP 483.
+   <!-- - Les types sont déclarés selon la norme PEP 483. -->
 
 1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie une instance de cercle de rayon 10 en position x=0 et y=0.
 
@@ -131,12 +131,11 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
    classDiagram
        direction TB
         class Displayer {
-           + draw_point(x: int, y: int, color: Color): void
-           + draw_line(x1: int, y1: int, x2: int, y2: int, color: Color): void
-           + draw_circle(x: int, y: int, radius: int, color: Color): void
-           + draw_rectangle(x: int, y: int, width: int, length: int, color: Color): void
-           + draw_square(x: int, y: int, side: int, color: Color): void
-
+           + draw_point(x: int, y: int, color: Color) void
+           + draw_line(x1: int, y1: int, x2: int, y2: int, color: Color) void
+           + draw_circle(x: int, y: int, radius: int, color: Color) void
+           + draw_rectangle(x: int, y: int, width: int, length: int, color: Color) void
+           + draw_square(x: int, y: int, side: int, color: Color) void
            }
 
        <<interface>> Displayer
@@ -191,7 +190,7 @@ Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse s
 
 **Aide :** Un dictionnaire python peut être simplement transcrit au format JSON en utilisant la fonction [dumps](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/) du module [json](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/).
 
-## Partie V : Pictionary
+<!-- ## Partie V : Pictionary
 
 Dans cette dernière partie on se propose de développer une version un peu particulière du jeu pictionary.
 
@@ -206,8 +205,8 @@ Le déroulement du jeu est le suivant:
   - au terme de ces 5 secondes le second joueur peut, dans le terminal, écrire le nom de l'objet qu'il pense que le joueur 1 a voulu dessiner
   - le programme compare l'entrée du joueur 2 au résultat et:
     1. s'il a bon, le joueur gagne `10 - n` points, où `n` est le nombre de tour mis pour trouver la réponse.
-    2. sinon le programme affiche les 2 premières sous formes pendant 5 secondes puis laisse le joueur 1 faire une seconde proposition. S'il trouve il gagnera donc `10 - 2 = 8 points`. Sinon, o le programme affichera les 3 premières sous formes pendant 5 secondes et ainsi de suite jusqu'à `n=10` répétitions.
+    2. sinon le programme affiche les 2 premières sous formes pendant 5 secondes puis laisse le joueur 1 faire une seconde proposition. S'il trouve il gagnera donc `10 - 2 = 8 points`. Sinon, o le programme affichera les 3 premières sous formes pendant 5 secondes et ainsi de suite jusqu'à `n=10` répétitions. -->
 
-## Déjà terminé ?
+<!-- ## Déjà terminé ?
 
-Vous pouvez dès à présent commencer [le TP n°4 sur la conception logicielle avec UML](../TP5-UML/README.md).
+Vous pouvez dès à présent commencer [le TP n°4 sur la conception logicielle avec UML](../TP5-UML/README.md). -->
