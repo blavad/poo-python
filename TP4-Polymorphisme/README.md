@@ -99,24 +99,22 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
    - le déplace en positon (15, 20)
    - affiche ses coordonnées x, y
 
-   Tester la fonction en lançant le script `python3 partieII.py q4`.
+   Tester la fonction en lançant le script `python partieII.py q4`.
 
 **Formes composées**
 
-5. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D.
+1. Proposer une extension à votre code permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
 
-1. Traduire cette extension en python. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
-
-1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_6` permettant de:
+2. Dans le fichier `partieII.py`, implémenter la fonction `run_question_6` permettant de:
 
    - construire une forme 2D composée de deux cercles et d'un rectangle au choix
    - afficher l'aire de cette forme
    - afficher les coordonnées de cette forme
    - appliquer une translation de 20 pixels en x et 8 pixels en y
 
-   Tester la fonction en lançant le script `python3 partieII.py q6`.
+   Tester la fonction en lançant le script `python partieII.py q6`.
 
-## Partie III : Afficheur de formes
+## (Bonus) Partie III : Afficheur de formes
 
 1h30
 
@@ -163,7 +161,7 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
    smiley.draw(displayer)
    ```
 
-   Exécuter la commande `python3 partieIIII.py q6` pour vérifer.
+   Exécuter la commande `python partieIIII.py q6` pour vérifer.
 
 **Affichage partagé**
 
@@ -177,17 +175,17 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 
 1. Dans le ficher `partieIII.py`, implémenter la fonction `run_question_9`. Le programme demande à l'utilisateur d'indiquer le numéro de l'écran d'affichage puis, en continue, lui demande trois 3 valeurs (x, y et size) et affiche le smiley correspondant. Dès que l'utilisateur entre la chaîne `"q"`, le programme s'arrête.
 
-   Tester `python3 partieIII.py q9`
+   Tester `python partieIII.py q9`
 
 1. Améliorer l'affichage de votre bonhomme et prenez une capture d'écran (à joindre dans le dossier de restitution).
 
-## Partie IV : Sauvegarde de formes dans un fichier
+<!-- ## Partie IV : Sauvegarde de formes dans un fichier
 
 30 min
 
 Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse sauvegarder une forme 2D quelconque dans un fichier JSON. On fera également en sorte de pouvoir reconstruire une forme depuis un fichier précédemment créé.
 
-**Aide :** Un dictionnaire python peut être simplement transcrit au format JSON en utilisant la fonction [dumps](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/) du module [json](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/).
+**Aide :** Un dictionnaire python peut être simplement transcrit au format JSON en utilisant la fonction [dumps](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/) du module [json](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/). -->
 
 <!-- ## Partie V : Pictionary
 
