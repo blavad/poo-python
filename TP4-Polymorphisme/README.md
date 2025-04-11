@@ -100,7 +100,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
    - le déplace en positon (15, 20)
    - affiche ses coordonnées x, y
 
-   Tester la fonction en lançant le script `python3 partieII.py q4`.
+   Tester la fonction en lançant le script `python partieII.py q4`.
 
 **Formes composées**
 
@@ -115,7 +115,7 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
    - afficher les coordonnées de cette forme
    - appliquer une translation de 20 pixels en x et 8 pixels en y
 
-   Tester la fonction en lançant le script `python3 partieII.py q6`.
+   Tester la fonction en lançant le script `python partieII.py q6`.
 
 ## Partie III : Afficheur de formes
 
@@ -165,7 +165,7 @@ Dans cette partie on s'intéresse à l'affichage de formes géométriques.
    smiley.draw(displayer)
    ```
 
-   Exécuter la commande `python3 partieIIII.py q6` pour vérifer.
+   Exécuter la commande `python partieIII.py q6` pour vérifer.
 
 **Affichage partagé**
 
@@ -179,7 +179,7 @@ On souhaite désormais afficher nos formes sur un écran partagé sur le web. Le
 
 1. Dans le ficher `partieIII.py`, implémenter la fonction `run_question_9`. Le programme demande à l'utilisateur d'indiquer le numéro de l'écran d'affichage puis, en continue, lui demande trois 3 valeurs (x, y et size) et affiche le smiley correspondant. Dès que l'utilisateur entre la chaîne `"q"`, le programme s'arrête.
 
-   Tester `python3 partieIII.py q9`
+   Tester `python partieIII.py q9`
 
 1. Améliorer l'affichage de votre bonhomme et prenez une capture d'écran (à joindre dans le dossier de restitution).
 
@@ -191,7 +191,7 @@ Modifier l'architecture du logiciel actuel pour faire en sorte que l'on puisse s
 
 **Aide :** Un dictionnaire python peut être simplement transcrit au format JSON en utilisant la fonction [dumps](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/) du module [json](https://www.geeksforgeeks.org/how-to-convert-python-dictionary-to-json/).
 
-## Partie V : Pictionary
+<!-- ## Partie V : Pictionary
 
 Dans cette dernière partie on se propose de développer une version un peu particulière du jeu pictionary.
 
@@ -206,7 +206,7 @@ Le déroulement du jeu est le suivant:
   - au terme de ces 5 secondes le second joueur peut, dans le terminal, écrire le nom de l'objet qu'il pense que le joueur 1 a voulu dessiner
   - le programme compare l'entrée du joueur 2 au résultat et:
     1. s'il a bon, le joueur gagne `10 - n` points, où `n` est le nombre de tour mis pour trouver la réponse.
-    2. sinon le programme affiche les 2 premières sous formes pendant 5 secondes puis laisse le joueur 1 faire une seconde proposition. S'il trouve il gagnera donc `10 - 2 = 8 points`. Sinon, o le programme affichera les 3 premières sous formes pendant 5 secondes et ainsi de suite jusqu'à `n=10` répétitions.
+    2. sinon le programme affiche les 2 premières sous formes pendant 5 secondes puis laisse le joueur 1 faire une seconde proposition. S'il trouve il gagnera donc `10 - 2 = 8 points`. Sinon, o le programme affichera les 3 premières sous formes pendant 5 secondes et ainsi de suite jusqu'à `n=10` répétitions. -->
 
 ## Déjà terminé ?
 

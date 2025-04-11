@@ -10,7 +10,7 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 
 ## Partie I : Pokémon
 
-45min
+1h00
 
 Les Pokémon sont certes de très mignonnes créatures, mais ils sont également un bon exemple pour illustrer l’héritage.
 
@@ -88,7 +88,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Selon vous, à quoi peut service la création d'interfaces ?
 
-## Partie IV : Généricité et héritage
+## Partie IV : Héritage
 
 1h00
 
