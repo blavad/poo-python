@@ -26,7 +26,6 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 
 5. Ajouter une méthode `interets()` qui calcule les intérêts perçus en un an et les ajoute au montant placé. Pour rappel les intérets se calculent avec la formule `interets = montant * (taux / 100)`
 
-
 6. Créer une instance de compte et tester ses différentes méthodes.
 
 ## Partie II : Pokémon
