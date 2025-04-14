@@ -10,7 +10,7 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 
 ## Partie I : Pokémon
 
-1h00
+1h30
 
 Les Pokémon sont certes de très mignonnes créatures, mais ils sont également un bon exemple pour illustrer l’héritage.
 
@@ -50,15 +50,15 @@ print(isinstance(pokemon, PokemonEau)) # False
 
 ## Partie II : Les piles
 
-30min
+45min
 
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 
 - le nom des variables est clair et explicite
-- un fichier différent par classe et programme principal
-- la nomenclature python des méthodes et attributs publics et privés est respectée
+- un fichier différent par classe et un programme principal
+- la nomenclature python des attributs public, protégés et privés est respectée
 
-**Les piles**
+**Les piles LIFO**
 
 1. Implémentez une pile LIFO (**L**ast **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `LIFO` dans un fichier `lifo.py` et définir trois fonctions :
 
@@ -69,28 +69,29 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 1. Exécuter le programme `test_lifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-1. De la même manière, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `FIFO` dans un fichier `fifo.py` et définir trois fonctions :
+**Les interfaces de programmation**
+
+1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`.
+
+2. Faire hériter la classe `LIFO` de `IPile`.
+
+3. Selon vous, à quoi peut servir la création d'interfaces ?
+
+**Les piles FIFO**
+
+1. De la même manière que dans la partie II, implémentez une pile FIFO (**F**irst **I**n **F**irst **O**ut) avec une liste. Pour cela, créer une classe `FIFO` dans un fichier `fifo.py`. Celle-ci héritera de l'interface `IPile` et définira les quatre méthodes :
 
    - `__init__` : qui construit une pile à partir d’une liste variable d’éléments passés en paramètres
    - `empile` : empile un élément en haut de la pile
    - `depile` : dépile un élément du bas de la pile
    - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"FIFO([0, 5, 12])"`)
 
-1. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
+2. Exécuter le programme `test_fifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
-## Partie III : Interfaces de programmation
-
-15min
-
-1. Créer une interface de programmation `IPile` contenant les méthodes `empile` et `dépile`.
-
-1. Faire hériter les classes `LIFO` et `FIFO` de `IPile`.
-
-1. Selon vous, à quoi peut service la création d'interfaces ?
-
-## Partie IV : Héritage
+<!-- ## Partie IV : Héritage
 
 1h00
+ -->
 
 <!-- 1. Modifier l'interface `IPile` pour qu'elle manipule des types d'objets explicitement spécifiés par l'utilisateur. Nous pourrons nous aider de l'exemple de la classe `LogGeneric` ci-dessous. -->
 <!--
@@ -138,7 +139,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
 
 <!-- 1. Créer dans ce même fichier un programme principal exécutant cette fonction sur une pile FIFO vide, sur une FIFO initialisée avec le liste `[1, 2, 3]` et sur une pile LIFO vide. Tester ce programme. -->
 
-1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
+<!-- 1. Dans un fichier `pile_multiple.py`, créer un classe `PileMultiple` qui n'est autre qu'une pile composée de plusieurs piles d'entiers. Définir trois fonctions :
 
    - `__init__` : qui construit une pile à partir d’une liste variable de piles passées en paramètres
    - `empile` : empile un entier dans chacune des sous-piles
@@ -152,7 +153,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
    - créer une pile multiple constituée de deux piles FIFO et d'une pile LIFO
    - créer une pile multiple constituée d'une pile LIFO et de la pile multiple précédente
 
-   Appliquer la fonction `test_pile` à ces deux piles multiples. Tester ce programme et vérifier que le résultat est cohérent.
+   Appliquer la fonction `test_pile` à ces deux piles multiples. Tester ce programme et vérifier que le résultat est cohérent. -->
 
 ## Déjà terminé ?
 
