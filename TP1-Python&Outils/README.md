@@ -68,9 +68,9 @@ Un package est simplement un répertoire contenant un ou plusieurs modules et un
 1. Créer un dossier `TP1-Python` (ce dossier est notre espace de travail).
 2. Dans le dossier `TP1-Python`, créer un fichier `main.py` avec le contenu:
    ```python
-    print("> ------------------------------")
-    print("> Module main")
-    print("> ------------------------------")
+   print("> ------------------------------")
+   print("> Module main")
+   print("> ------------------------------")
    ```
 3. Exécuter ce fichier en utilisant l'interpréteur.
 4. Exécuter le module `main`. Que se passe-t-il ?
