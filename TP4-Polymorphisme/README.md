@@ -18,31 +18,31 @@ Dans ce TP, on s'intéresse au concept d'héritage et de polymorphisme. Pour cel
      class Shape2D {
         # xpos : int
         # ypos : int
-        # color : Color
+        # color : tuple[int]
 
-        + area() : float
-        + draw() : void
-        + move(deltaX : int, deltaY : int) : void
-        + get_xy(): tuple[int, int]
+        + area()  float
+        + draw()  void
+        + move(deltaX : int, deltaY : int)  void
+        + get_xy() tuple[int, int]
 
         }
 
     class Point {
-            + area() : float
-            + draw() : void
+            + area()  float
+            + draw()  void
     }
 
     class Circle {
     -radius : int
-    +area() : float
-    +draw() : void
+    +area()  float
+    +draw()  void
     }
 
     class Rectangle {
     -width : int
     -height : int
-    +area() : float
-    +draw(): void
+    +area()  float
+    +draw() void
     }
 
     Shape2D <|-- Circle
@@ -56,11 +56,11 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 1. Un objet **Circle** possède-t-il un attribut **color**
 1. Peut-on appliquer la méthode **move** à un objet **Point** ?
 1. Grâce à quelle notion de l'approche objet, la méthode **area** peut-elle être présente dans toutes les classes du diagramme et à quoi sert cette notion ?
-1. a. Quelle hypothèse doit-on considérer pour rendre la classe **Shape2D** abstraite ?
+1. Quelle hypothèse doit-on considérer pour rendre la classe **Shape2D** abstraite ?
 
-   b. Quel est l'intérêt d'éviter que cette surclasse soit concrète ?
+   <!-- b. Quel est l'intérêt d'éviter que cette surclasse soit concrète ? -->
 
-   c. Quelle modification doit-on apporté au diagramme de classes ?
+   <!-- c. Quelle modification doit-on apporté au diagramme de classes ? -->
 
 ## Partie II : Classes et instances
 
@@ -68,31 +68,32 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 **Formes simples**
 
-1. Créer un environnement virtuel et l'activer.
+<!-- 1. Créer un environnement virtuel et l'activer. -->
 
 1. Traduire les classes ci-dessus en python. On veillera à ce que les points suivants soient respectés:
 
    - Une classe = un fichier.
    - Les constructeurs sont correctement implémentés.
-   - Les attributs sont tous privés ou protégés.
-   - Le programme lève une exception lorsque la couleur est invalide
+   - Le nomage des attributs et méthodes privés ou protégés respecte les conventions python.
 
-     ```python
+   <!-- - Le programme lève une exception lorsque la couleur est invalide -->
+
+     <!-- ```python
      # Exemple de fonction qui lève une exception
      def function_with_error():
         raise Exception()
-     ```
+     ``` -->
 
-     **_Note :_** Une couleur est valide si son type est un 3-uplet dont les valeurs sont comprises entre 0 et 255. On pourra définir le type `Color` un alias vers le 3-uplets (**tuple** en anglais) d'entiers
+     <!-- **_Note :_** Une couleur est valide si son type est un 3-uplet ou une liste de 3 éléments dont les valeurs sont comprises entre 0 et 255. On pourra définir le type `Color` un alias vers le 3-uplets (**tuple** en anglais) d'entiers -->
 
    - Les méthodes `area`, `move` et `get_xy` sont correctement implémentés.
    - La méthode `draw` lève une exception de type `NotImplementedError` car elle sera implémentée plus tard dans le TP (voir exemple ci-dessous).
 
-   - Les types sont déclarés selon la norme PEP 483.
+   - (Optionnel) Les types sont déclarés selon la norme PEP 483.
 
-1. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie une instance de cercle de rayon 10 en position x=0 et y=0.
+2. Faire en sorte que l'appel du constructeur par défaut de la classe `Circle` renvoie une instance de cercle de rayon 10 en position x=0 et y=0.
 
-1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_4`. Cette fonction:
+3. Dans le fichier `partieII.py`, implémenter la fonction `run_question_4`. Cette fonction:
 
    - utilise le constructeur par défaut pour créer un cercle
    - affiche son aire
