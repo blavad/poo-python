@@ -105,11 +105,9 @@ Etant donné le diagramme de classes ci-dessus représentant des formes 2D, rép
 
 **Formes composées**
 
-5. Proposer une extension du modèle UML (figure 1) permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D.
+5. Proposer une extension à votre code permettant d'obtenir une forme 2D composée de plusieurs autres formes 2D. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
 
-1. Traduire cette extension en python. On considère que l'aire de la forme 2D composée est la somme des aires des formes 2D individuelles. On pourra nommer notre forme composée `CombinedShape2D`.
-
-1. Dans le fichier `partieII.py`, implémenter la fonction `run_question_6` permettant de:
+6. Dans le fichier `partieII.py`, implémenter la fonction `run_question_6` permettant de:
 
    - construire une forme 2D composée de deux cercles et d'un rectangle au choix
    - afficher l'aire de cette forme
