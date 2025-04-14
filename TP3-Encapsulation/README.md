@@ -20,11 +20,14 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
    Compte | montant : 2000€ | taux : 2%
    ```
 
-3. Ajoutez une méthode `depot(x)` qui ajoute x au montant sur le compte.
+3. Ajouter une méthode `depot(x)` qui ajoute x au montant sur le compte.
 
-4. Ajoutez une méthode `retrait(x)` qui enlève x au montant sur le compte. Elle pourra renvoyer une erreur si le montant sur le compte devient négative et annuler alors l'opération.
+4. Ajouter une méthode `retrait(x)` qui enlève x au montant sur le compte. Elle pourra renvoyer une erreur si le montant sur le compte devient négative et annuler alors l'opération.
 
-5. Ajoutez une méthode `interets()` qui calcule les intérêts perçus en un an et les ajoute au montant placé. Pour rappel les intérets se calculent avec la formule `interets = montant * (taux / 100)`
+5. Ajouter une méthode `interets()` qui calcule les intérêts perçus en un an et les ajoute au montant placé. Pour rappel les intérets se calculent avec la formule `interets = montant * (taux / 100)`
+
+
+6. Créer une instance de compte et tester ses différentes méthodes.
 
 ## Partie II : Pokémon
 
