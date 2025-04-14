@@ -8,7 +8,25 @@ Dans ce TP, on s'intéresse à l'implémentation de classes et l'utilisation des
 - Comprendre le concept d'encapsulation et savoir l'utiliser convenablement
 - Utiliser les bonnes pratiques de codage python
 
-## Partie I : Pokémon
+## Partie I : Compte bancaire
+
+1h00
+
+1. Créer une classe `Compte` modélisant un compte en banque. La classe possède deux attributs `montant` et `taux` correspondant au montant placé sur le compte et au taux d'intérêt. Ces deux attributs doivent être affectés par le constructeur.
+
+2. Ajouter une méthode `affiche()` qui affiche la `montant` et le `taux` comme ci-dessous :
+
+   ```
+   Compte | montant : 2000€ | taux : 2%
+   ```
+
+3. Ajoutez une méthode `depot(x)` qui ajoute x au montant sur le compte.
+
+4. Ajoutez une méthode `retrait(x)` qui enlève x au montant sur le compte. Elle pourra renvoyer une erreur si le montant sur le compte devient négative et annuler alors l'opération.
+
+5. Ajoutez une méthode `interets()` qui calcule les intérêts perçus en un an et les ajoute au montant placé. Pour rappel les intérets se calculent avec la formule `interets = montant * (taux / 100)`
+
+## Partie II : Pokémon
 
 1h30
 
@@ -48,9 +66,9 @@ print(isinstance(pokemon, PokemonEau)) # False
 
 ```
 
-## Partie II : Les piles
+## Partie III : Les piles
 
-45min
+1h00
 
 Dans la suite des exercices, on prendra soin de respecter les règles suivantes :
 
@@ -67,7 +85,7 @@ Dans la suite des exercices, on prendra soin de respecter les règles suivantes 
    - `depile` : dépile un élément du haut de la pile
    - `__str__` : renvoie une chaîne de caractère représentant la pile (exemple : `"LIFO([0, 5, 12])"`)
 
-1. Exécuter le programme `test_lifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
+2. Exécuter le programme `test_lifo.py` pour vérifiez que votre code est correcte. Faire les modifications si ce n'est pas le cas.
 
 **Les interfaces de programmation**
 
