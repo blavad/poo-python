@@ -29,6 +29,26 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 
    Ecrire la formule permettant de retrouver le nombre secret `n` à partir de `x`.
 
+5. Qu'affiche le programme suivant ?
+
+   ```python
+   x = 2**3*2-5*3
+   y = (-5*2+7)**2
+   b = x < y
+
+   print(x)
+   print(y)
+   print(b)
+
+   x += 3
+   y %= (x + 2)
+   b = not (x > y) or (y == 0)
+
+   print(x)
+   print(y)
+   print(b)
+   ```
+
 ## Partie II : Premières fonctions
 
 1. Complétez la fonction suivante, sachant qu'elle traduit l'expression mathématique $f(x)=7x-3$.
@@ -39,7 +59,7 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
        return y
    ```
 
-2. Ecrire un fonction python qui traduit l'expression mathématique $f(x,y)=3x^2 - 2y +5$
+2. Ecrire une fonction python qui traduit l'expression mathématique $f(x,y)=3x^2 - 2y +5$
 
 3. Ecrire une fonction python qui calcule et renvoie l'aire d'un trapèze. Elle a pour paramètres : `B`, `b`, `h` qui représentent respectivement la grande base, la petite base et la hauteur.
 
@@ -145,7 +165,7 @@ Dans ce TP, on s'intéresse à l'écriture de programmes simples en Python. Les 
 
      _Exemple :_ `bin(43)` renvoie le nombre entier `"101011"`.
 
-1. Créer une fonction `separer(chaine)` qui renvoie la chaîne obtenue en séparant les caractères de chaine par des tirets "-".
+1. Créer une fonction `separer(chaine)` qui renvoie la chaîne obtenue en séparant les caractères de la chaine par des tirets "-".
 
 1. Écrire un algorithme qui place les zéro d'une liste vers la fin de celle-ci, en maintenant l'ordre des éléments.
 
